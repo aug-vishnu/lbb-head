@@ -81,22 +81,12 @@ header {
   align-items: stretch;
   justify-content: space-between;
 
-  .success-message {
-    width: 100% !important;
-    display: flex;
-    justify-content: center !important;
-    align-items: center;
-    margin: 5em 0em 28em 0;
-    color: rgb(0, 33, 2);
-    font-size: 1.6em;
-    font-weight: 600;
-    // border: 2px solid green;
-    border-radius: 8px;
-  }
+
 
   #content-part {
     display: flex;
     width: 50%;
+    height: 100%;
     flex-direction: column;
     justify-content: space-between;
     // padding: 0em 1em 5em 0;
@@ -109,10 +99,11 @@ header {
   }
 
   #form-part {
-    width: 100%;
+    width: 50%;
     border: 2px solid rgba(0, 0, 0, 0.05);
-    padding: 0em 10em;
+    padding: 0em 8em;
     border-radius: 8px;
+    padding-bottom: 8em;
 
     .top-line {
       margin: 3em 0em;
