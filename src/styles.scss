@@ -28,7 +28,6 @@ body {
   Sans-Serif;
   font-style: normal;
   font-weight: bold;
-  animation: pulse 3s ease-in;
 
   span {
     color: red;
@@ -100,12 +99,13 @@ header {
 
     svg {
       height: 100% !important;
-      width: 80% !important;
+      width: 100% !important;
     }
 
   }
 
   #form-part {
+    zoom: .86;
     width: 50%;
     padding: 0em 8em;
     border-radius: 8px;

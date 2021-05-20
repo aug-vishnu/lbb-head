@@ -1,7 +1,16 @@
 nav {
+  background: linear-gradient(270deg, #124877 5.58%, #003056 95.63%);
   margin: 2em;
   margin-left: 16em;
   display: flex;
   justify-content: center;
 
+  border-radius: 16px;
+}
+
+.navbar-brand-wrapper,
+.navbar-menu-wrapper {
+  background: linear-gradient(270deg, #124877 5.58%, #003056 95.63%);
+  width: 100%;
+  padding: 0;
 }
