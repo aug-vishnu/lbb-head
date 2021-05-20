@@ -1,3 +1,9 @@
+import { DashboardHomeComponent } from './dashboard/dashboard-home/dashboard-home.component';
+import { DashboardNavComponent } from './dashboard/dashboard-nav/dashboard-nav.component';
+import { DashboardFooterComponent } from './dashboard/dashboard-footer/dashboard-footer.component';
+import { TopBarComponent } from './dashboard/top-bar/top-bar.component';
+import { RightBarComponent } from './dashboard/right-bar/right-bar.component';
+import { SideBarComponent } from './dashboard/side-bar/side-bar.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -10,7 +16,13 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [
     AppComponent,
     SigninComponent,
-    SignupComponent
+    SignupComponent,
+    DashboardFooterComponent,
+    TopBarComponent,
+    DashboardNavComponent,
+    DashboardHomeComponent,
+    SideBarComponent,
+    RightBarComponent,
   ],
   imports: [
     BrowserModule,

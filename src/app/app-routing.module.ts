@@ -1,3 +1,5 @@
+import { DashboardHomeComponent } from './dashboard/dashboard-home/dashboard-home.component';
+import { DashboardNavComponent } from './dashboard/dashboard-nav/dashboard-nav.component';
 import { SigninComponent } from './auth/signin/signin.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -17,11 +19,10 @@ const routes: Routes = [
   // Admin-Panel
   {
     path: 'dashboard',
-    // component: DashboardNavComponent,
+    component: DashboardNavComponent,
     // canActivate: [AuthGuard],
     children: [
-      // { path: '', component: DashboardHomeComponent },
-      // { path: '', component: ArambHomeComponent },
+      { path: '', component: DashboardHomeComponent },
 
     ]
   }
