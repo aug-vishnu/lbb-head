@@ -1,0 +1,58 @@
+import { Component, OnInit } from '@angular/core';
+declare var $: any;
+
+@Component({
+  selector: 'app-side-bar',
+  templateUrl: './side-bar.component.html',
+  styleUrls: ['./side-bar.component.scss']
+})
+export class SideBarComponent implements OnInit {
+
+
+  constructor() { }
+  Shop: any
+  ngOnInit(): void {
+    this.get_nav()
+    // this.toValhalla(this.activeNav)
+  }
+
+
+  activeNav: any
+  async get_nav() {
+    var value = localStorage.getItem('active_nav')
+    // const { value } = await Storage.get({ key: 'active_nav' });
+    this.activeNav = value
+    this.toValhalla(value)
+    // $(".nav" + value).addClass("active");
+    console.log(value);
+  }
+
+  // /////////////////////////////////////////////////////////////////////////////////////////////
+  prviousNav = 1
+  toValhalla(nav) {
+    var element = $('ul.nav .nav-item')
+    // Storage.set({ key: 'active_nav', value: nav });
+    localStorage.setItem('active_nav', nav)
+    console.log("asd", nav, typeof (nav), typeof (this.activeNav));
+
+    element.each(function (index) {
+      if ($(this).is("li") && $(this).children("a").length !== 0) {
+        $(this).children("a").addClass("active");
+        $(this).parent("ul#sidebarnav").length === 0 ?
+          $(this).removeClass("active") :
+          $(this).removeClass("selected");
+
+      }
+    });
+    $(".nav" + nav).addClass("active");
+    $(".nav" + this.prviousNav).removeClass("active");
+    $(".sidebar").removeClass("active");
+
+    if (this.prviousNav == nav) {
+      this.prviousNav = nav
+    }
+  }
+  // /////////////////////////////////////////////////////////////////////////////////////////////
+
+
+}
