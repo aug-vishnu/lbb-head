@@ -11,6 +11,9 @@ import { AppComponent } from './app.component';
 import { SigninComponent } from './auth/signin/signin.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { AppRoutingModule } from './app-routing.module';
+import { PricingComponent } from './pages/pricing/pricing.component';
+import { PaymentPersonalInfoComponent } from './pages/payment-personal-info/payment-personal-info.component';
+import { PaymentCardInfoComponent } from './pages/payment-card-info/payment-card-info.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,9 @@ import { AppRoutingModule } from './app-routing.module';
     DashboardHomeComponent,
     SideBarComponent,
     RightBarComponent,
+    PricingComponent,
+    PaymentPersonalInfoComponent,
+    PaymentCardInfoComponent,
   ],
   imports: [
     BrowserModule,
