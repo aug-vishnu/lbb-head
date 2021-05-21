@@ -1,1 +1,58 @@
-<p>payment-card-info works!</p>
+<div class="screen">
+  <div class="top-line">
+    Payment
+  </div>
+  <div class="box-screen">
+    <!-- <div class="top-line">Billing Information</div> -->
+    <div class="box-content">
+      <form class="">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Cardholder Name </label>
+              <input name="email" type="email" class="form-control success" required placeholder="Chris Martin">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Cardholder Name </label>
+              <input name="email" type="email" class="form-control success" required placeholder="Chris Martin">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Card Number</label>
+              <input name="email" type="email" class="form-control success" required placeholder="2564 1421 0897 1244">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Expiration Date</label>
+              <input name="email" type="email" class="form-control success" required placeholder="02/2022">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>CVV</label>
+              <input name="password" placeholder='***' type="password" class="form-control" required
+                placeholder="Enter Password ">
+            </div>
+          </div>
+        </div>
+        <div class="botton-row">
+          <button [routerLink]="['/dashboard/payment-card-info']" routerLinkActive="router-link-active"
+            data-toggle="modal" class="btn" type="submit">
+            Proceed
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</div>
