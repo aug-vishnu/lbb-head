@@ -1,3 +1,4 @@
+import { OnboardingComponent } from './pages/onboarding/onboarding.component';
 import { PaymentPersonalInfoComponent } from './pages/payment-personal-info/payment-personal-info.component';
 import { PricingComponent } from './pages/pricing/pricing.component';
 import { DashboardHomeComponent } from './dashboard/dashboard-home/dashboard-home.component';
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'signin', component: SigninComponent },
   { path: 'signup', component: SignupComponent },
 
+  { path: 'on-boarding', component: OnboardingComponent },
 
   // Admin-Panel
   {
@@ -27,9 +29,12 @@ const routes: Routes = [
     children: [
       { path: '', component: DashboardHomeComponent },
 
+
       { path: 'pricing', component: PricingComponent },
+
       { path: 'payment-personal-info', component: PaymentPersonalInfoComponent },
       { path: 'payment-card-info', component: PaymentCardInfoComponent },
+
 
     ]
   }

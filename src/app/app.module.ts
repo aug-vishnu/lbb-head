@@ -14,6 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { PricingComponent } from './pages/pricing/pricing.component';
 import { PaymentPersonalInfoComponent } from './pages/payment-personal-info/payment-personal-info.component';
 import { PaymentCardInfoComponent } from './pages/payment-card-info/payment-card-info.component';
+import { OnboardingComponent } from './pages/onboarding/onboarding.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { PaymentCardInfoComponent } from './pages/payment-card-info/payment-card
     PricingComponent,
     PaymentPersonalInfoComponent,
     PaymentCardInfoComponent,
+    OnboardingComponent,
   ],
   imports: [
     BrowserModule,

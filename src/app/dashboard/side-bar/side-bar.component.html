@@ -1,10 +1,21 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
   <div class="profile">
-    <div class="profile-image">
+    <!-- <div class="profile-image">
       <img src="../../../assets/icons/Container.png" alt="">
     </div>
     <div class="profile-name">Chris Martin</div>
-    <div class="profile-type">Free account</div>
+    <div class="profile-type">Free account</div> -->
+    <div class="form-group">
+      <!-- <label class="col-sm-3 col-form-label"></label> -->
+      <div class="">
+        <select class="form-control">
+          <option>Category1</option>
+          <option>Category2</option>
+          <option>Category3</option>
+          <option>Category4</option>
+        </select>
+      </div>
+    </div>
     <div class="profile-end"><svg width="224" height="1" viewBox="0 0 224 1" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <line y1="0.5" x2="224" y2="0.5" stroke="#E1E1FB" />
@@ -15,14 +26,47 @@
   <ul class="nav">
 
     <!-- Nav -->
-    <li class="nav-item nav10" (click)="toValhalla(10)">
+    <!-- <li class="nav-item nav10" (click)="toValhalla(10)">
       <a class="nav-link" [routerLink]="['/dashboard']">
         <i class="ti-bell menu-icon"></i>
         <span class="menu-title">Dashboard</span>
       </a>
+    </li> -->
+    <li class="nav-item">
+      <a class="nav-link" (click)="toValhalla(10)" data-toggle="collapse" href="#ui-basic" aria-expanded="false"
+        aria-controls="ui-basic">
+        <i class="ti-bell menu-icon"></i>
+        <span class="menu-title">Dashboard</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="ui-basic">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link">Start New</a>
+          </li>
+          <li class="nav-item"> <a class="nav-link">View projects</a></li>
+        </ul>
+      </div>
     </li>
     <!-- Nav -->
-
+    <!-- Nav Dropdown -->
+    <!-- <li class="nav-item nav10" (click)="toValhalla(10)">
+      <a class="nav-e link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+        <i class="icon-head menu-icon"></i>
+        <span class="menu-title">Auth Pages</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="auth">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item nav10" (click)="toValhalla(10)"> <a class=[routerLink]="['//dashboard/signin']">
+              Signi"nav-link" n </a>
+          </li>
+          <li class="nav-item nav10" (click)="toValhalla(10)"> <a class=[routerLink]="['//dashboard/signup']">
+              Signu"nav-link" p </a>
+          </li>
+        </ul>
+      </div>
+    </li> -->
+    <!-- Nav Dropdown -->
     <li class="list-divider"></li>
 
     <!-- Nav Single -->
@@ -128,24 +172,7 @@
 
 
 
-    <!-- Nav Dropdown -->
-    <!-- <li class="nav-item nav10" (click)="toValhalla(10)">
-      <a class="nav-e link" [routerLink]="['//dashboard/routePath' ]" routerLinkActivedashboard//="router-link-activ" data-toggle="collapse"
-        href="#auth" aria-expanded="false" aria-controls="auth">
-        <i class="icon-head menu-icon"></i>
-        <span class="menu-title">Auth Pages</span>
-        <i class="menu-arrow"></i>
-      </a>
-      <div class="collapse" id="auth">
-        <ul class="nav flex-column sub-menu">
-          <li class="nav-item nav10" (click)="toValhalla(10)"> <a class= [routerLink]="['//dashboard/signin']"> Signi"nav-link" n </a>
-          </li>
-          <li class="nav-item nav10" (click)="toValhalla(10)"> <a class= [routerLink]="['//dashboard/signup']"> Signu"nav-link" p </a>
-          </li>
-        </ul>
-      </div>
-    </li> -->
-    <!-- Nav Dropdown -->
+
 
   </ul>
 </nav>
