@@ -2,6 +2,58 @@
 // For Standars Saaa
 // ////////////////////////////////////////////////////////////////////////////
 
+.bootstrap-tagsinput {
+  border: 0px solid rgb(204, 204, 204) !important;
+  background-color: #F6F6F6;
+  box-shadow: inse t 0 1px 1px rgb(0 0 0 / 8%);
+  display: inline-block;
+  padding: 2em !important;
+  // vertical-align: middle;
+  border-radius: 4px;
+  // max-width: 100%;
+  line-height: 25px;
+  cursor: text;
+  height: 30vh;
+  width: 100vh;
+}
+
+.bootstrap-tagsinput .tag [data-role="remove"] {
+  margin-left: 12px;
+  cursor: pointer;
+  padding: .3em;
+  background-color: #FFF;
+  border-radius: 100%;
+  zoom: .8;
+  color: #12E4B2 !important;
+}
+
+.label-info {
+  background-color: #1ABE97;
+}
+
+.form-group span {
+  color: #FFF !important;
+  // background-color: green;
+}
+
+.bootstrap-tagsinput .tag [data-role="remove"]:after {
+  content: "X";
+  font-size: 1em;
+  padding: .3em;
+}
+
+.label {
+  display: inline;
+  // margin: 1em;
+  padding: 0.6em 1em;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+}
 
 .page-body-wrapper {
   padding-top: 60px !important;
@@ -438,6 +490,8 @@ header {
           display: flex;
           flex-direction: row;
           align-items: center;
+          justify-content: center;
+          margin: 2em 0em;
           font-size: 1.3em;
           font-weight: 600;
           color: #D1D1D1;

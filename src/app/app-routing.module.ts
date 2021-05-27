@@ -1,3 +1,4 @@
+import { KeywordSelectionComponent } from './pages/keyword-selection/keyword-selection.component';
 import { OnboardingComponent } from './pages/onboarding/onboarding.component';
 import { PaymentPersonalInfoComponent } from './pages/payment-personal-info/payment-personal-info.component';
 import { PricingComponent } from './pages/pricing/pricing.component';
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'signup', component: SignupComponent },
 
   { path: 'on-boarding', component: OnboardingComponent },
+  { path: 'keyword-selection', component: KeywordSelectionComponent },
 
   // Admin-Panel
   {
