@@ -334,14 +334,19 @@ header {
 // Sidebar Component
 .profile {
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   .form-group {
-    margin: 0em 1em 1em 1em;
-    padding-top: 3em;
+    margin: 0em 1em 0em 1em;
+    padding-top: 2em;
   }
 
   .form-control {
     padding: 0;
     margin: 0;
+    width: 100%;
     border-width: 0px; // width: 85%;
   }
 
