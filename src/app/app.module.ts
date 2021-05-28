@@ -16,6 +16,7 @@ import { PaymentPersonalInfoComponent } from './pages/payment-personal-info/paym
 import { PaymentCardInfoComponent } from './pages/payment-card-info/payment-card-info.component';
 import { OnboardingComponent } from './pages/onboarding/onboarding.component';
 import { KeywordSelectionComponent } from './pages/keyword-selection/keyword-selection.component';
+import { AccountSettingsComponent } from './pages/account-settings/account-settings.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { KeywordSelectionComponent } from './pages/keyword-selection/keyword-sel
     PaymentCardInfoComponent,
     OnboardingComponent,
     KeywordSelectionComponent,
+    AccountSettingsComponent,
   ],
   imports: [
     BrowserModule,

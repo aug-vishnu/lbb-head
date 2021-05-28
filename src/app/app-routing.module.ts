@@ -1,3 +1,4 @@
+import { AccountSettingsComponent } from './pages/account-settings/account-settings.component';
 import { KeywordSelectionComponent } from './pages/keyword-selection/keyword-selection.component';
 import { OnboardingComponent } from './pages/onboarding/onboarding.component';
 import { PaymentPersonalInfoComponent } from './pages/payment-personal-info/payment-personal-info.component';
@@ -31,6 +32,7 @@ const routes: Routes = [
     children: [
       { path: '', component: DashboardHomeComponent },
 
+      { path: 'account-settings', component: AccountSettingsComponent },
 
       { path: 'pricing', component: PricingComponent },
 
