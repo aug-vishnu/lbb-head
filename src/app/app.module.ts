@@ -17,6 +17,12 @@ import { PaymentCardInfoComponent } from './pages/payment-card-info/payment-card
 import { OnboardingComponent } from './pages/onboarding/onboarding.component';
 import { KeywordSelectionComponent } from './pages/keyword-selection/keyword-selection.component';
 import { AccountSettingsComponent } from './pages/account-settings/account-settings.component';
+import { AgGridModule } from 'ag-grid-angular';
+import { DateComponent, HeaderComponent, HeaderGroupComponent } from 'ag-grid-community/dist/lib/components/framework/componentTypes';
+import { KeywordPageComponent } from './pages/keyword-page/keyword-page.component';
+import { KeywordResultComponent } from './pages/keyword-result/keyword-result.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PublishingPagesComponent } from './pages/publishing-pages/publishing-pages.component';
 
 @NgModule({
   declarations: [
@@ -35,10 +41,15 @@ import { AccountSettingsComponent } from './pages/account-settings/account-setti
     OnboardingComponent,
     KeywordSelectionComponent,
     AccountSettingsComponent,
+    KeywordPageComponent,
+    KeywordResultComponent,
+    PublishingPagesComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    AgGridModule.withComponents([])
   ],
   providers: [],
   bootstrap: [AppComponent]

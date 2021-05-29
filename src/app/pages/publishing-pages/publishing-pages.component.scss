@@ -1,0 +1,177 @@
+.screen {
+  // margin-top: 20vh;
+  margin: 6vh 2em;
+  justify-content: space-between;
+
+  .top-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0em;
+
+    .content-one {
+      font-weight: 800;
+      color: #11142D;
+      font-size: 1.2em;
+
+      span {
+        color: rgba(17, 20, 45, 0.363)
+      }
+    }
+  }
+
+  .box-screen {
+    background-color: #fff;
+    border-radius: 1em;
+    padding: 2em 2em;
+    margin: 1em 0em;
+
+    .content {
+      .content-heading {
+        margin-bottom: 1em;
+        color: #000;
+        font-weight: 800;
+        font-size: 1.2em;
+        margin-top: 1em;
+      }
+
+      .end-line {
+        margin: 2em 0em;
+      }
+    }
+  }
+
+  .botton-row {
+    display: flex;
+    justify-content: center;
+  }
+
+
+}
+
+.btn {
+  font-size: .8em;
+  // line-height: 1em;
+  color: #FFF;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0em 0;
+  padding: 1em 3em;
+  background-color: #1ABE97;
+  font-weight: 600;
+  box-shadow: 0px 4px 50px 0px #00000017;
+
+}
+
+.box {
+  display: flex;
+
+  .score-bar {
+    background-color: #FFF;
+    width: 130%;
+  }
+}
+
+.score-bar {
+
+  .screen-two {
+    // margin-top: 20vh;
+    margin: 6vh 0em;
+    justify-content: space-between;
+
+    .top-line {
+      align-items: center;
+      font-weight: 800;
+      color: #11142D;
+      font-size: 1.2em;
+      padding: 0em 1em;
+      margin-bottom: 0em;
+    }
+
+    .overall-score,
+    .score-one,
+    .score-two,
+    .score-three {
+      padding: 1em 1em;
+      /* Add the blur effect */
+    }
+
+    .not-premium {
+      display: inline-flex;
+      flex-direction: column;
+      // align-items: center;
+      justify-content: center;
+      -webkit-user-select: none;
+      /* Safari */
+      -ms-user-select: none;
+      /* IE 10 and IE 11 */
+      user-select: none;
+    }
+
+    .not-premium-cta {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+
+      button {
+        background-color: #00355D;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0em 2em;
+        // width: 50%;
+      }
+
+      svg {
+        margin: 0em 1em;
+      }
+    }
+
+    .not-premium-score {
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
+
+      .score-two {
+        filter: blur(0px) !important;
+        -webkit-filter: blur(0px) !important;
+
+      }
+    }
+
+    .overall-score {
+      margin-top: 1em;
+      padding: 1em 1em;
+      background-color: #F1F8FE;
+    }
+
+    .score {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1em;
+
+      .score-name {
+        font-weight: 500;
+      }
+
+      .score-value {
+        font-weight: 800;
+      }
+    }
+
+    hr {
+      border-color: #F1F8FE;
+      margin: .7em 0em;
+    }
+
+    a {
+      font-size: .7em;
+      text-decoration: underline;
+    }
+
+    button {
+      font-size: .7em;
+    }
+  }
+
+}

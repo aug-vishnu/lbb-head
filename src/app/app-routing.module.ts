@@ -1,3 +1,6 @@
+import { PublishingPagesComponent } from './pages/publishing-pages/publishing-pages.component';
+import { KeywordResultComponent } from './pages/keyword-result/keyword-result.component';
+import { KeywordPageComponent } from './pages/keyword-page/keyword-page.component';
 import { AccountSettingsComponent } from './pages/account-settings/account-settings.component';
 import { KeywordSelectionComponent } from './pages/keyword-selection/keyword-selection.component';
 import { OnboardingComponent } from './pages/onboarding/onboarding.component';
@@ -22,6 +25,7 @@ const routes: Routes = [
   { path: 'signup', component: SignupComponent },
 
   { path: 'on-boarding', component: OnboardingComponent },
+
   { path: 'keyword-selection', component: KeywordSelectionComponent },
 
   // Admin-Panel
@@ -39,6 +43,9 @@ const routes: Routes = [
       { path: 'payment-personal-info', component: PaymentPersonalInfoComponent },
       { path: 'payment-card-info', component: PaymentCardInfoComponent },
 
+      { path: 'keyword-result', component: KeywordResultComponent },
+
+      { path: 'publishing-pages', component: PublishingPagesComponent },
 
     ]
   }
