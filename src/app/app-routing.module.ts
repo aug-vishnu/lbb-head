@@ -1,3 +1,4 @@
+import { PublishingPagesEditComponent } from './pages/publishing-pages-edit/publishing-pages-edit.component';
 import { PublishingPagesComponent } from './pages/publishing-pages/publishing-pages.component';
 import { KeywordResultComponent } from './pages/keyword-result/keyword-result.component';
 import { KeywordPageComponent } from './pages/keyword-page/keyword-page.component';
@@ -46,6 +47,7 @@ const routes: Routes = [
       { path: 'keyword-result', component: KeywordResultComponent },
 
       { path: 'publishing-pages', component: PublishingPagesComponent },
+      { path: 'publishing-pages-edit', component: PublishingPagesEditComponent },
 
     ]
   }

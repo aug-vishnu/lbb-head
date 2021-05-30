@@ -23,6 +23,7 @@ import { KeywordPageComponent } from './pages/keyword-page/keyword-page.componen
 import { KeywordResultComponent } from './pages/keyword-result/keyword-result.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PublishingPagesComponent } from './pages/publishing-pages/publishing-pages.component';
+import { PublishingPagesEditComponent } from './pages/publishing-pages-edit/publishing-pages-edit.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { PublishingPagesComponent } from './pages/publishing-pages/publishing-pa
     KeywordPageComponent,
     KeywordResultComponent,
     PublishingPagesComponent,
+    PublishingPagesEditComponent,
   ],
   imports: [
     BrowserModule,
