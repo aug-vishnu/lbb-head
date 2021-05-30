@@ -11,119 +11,61 @@ export class KeywordResultComponent implements OnInit {
 
   gridApi;
   gridColumnApi;
+  rowStyle = { background: 'black' };
 
-  columnDefs;
-  defaultColDef;
-  rowSelection;
-  rowData: any = [];
-
-  constructor(private http: HttpClient) {
-    this.columnDefs = [
-      {
-        headerName: 'Athlete',
-        field: 'athlete',
-        minWidth: 180,
-        headerCheckboxSelection: true,
-        // headerCheckboxSelectionFilteredOnly: true,
-        checkboxSelection: true,
-      },
-      { field: 'age' },
-      {
-        field: 'country',
-        minWidth: 150,
-      },
-      { field: 'year' },
-      {
-        field: 'date',
-        minWidth: 150,
-      },
-      {
-        field: 'sport',
-        minWidth: 150,
-      },
-      { field: 'gold' },
-      { field: 'silver' },
-      { field: 'bronze' },
-      { field: 'total' },
-    ];
-    this.defaultColDef = {
-      flex: 1,
-      minWidth: 100,
-      resizable: true,
+  getRowClass = params => {
+    if (params.node.rowIndex > 0) {
+      return 'my-shaded-effect';
     };
-    this.rowSelection = 'multiple';
   }
+
+
+  rowClassRules = {
+    'sick-days-warning': function (params) {
+      var numSickDays = params.data.sickDays;
+      return numSickDays > 5 && numSickDays <= 7;
+    },
+    'sick-days-breach': 'data.sickDays >= 8',
+  };
+
+  rowSelection = 'multiple';
+  defaultColDef = {
+    flex: 1,
+    minWidth: 100,
+    resizable: true,
+  };
+  columnDefs = [
+    {
+      headerName: 'Google Search',
+      field: 'google_search',
+      minWidth: 200,
+      headerCheckboxSelection: true,
+      headerCheckboxSelectionFilteredOnly: true,
+      checkboxSelection: true,
+    },
+    { field: 'content_snippet', minWidth: 200, headerName: 'Content Snippet', },
+    { field: 'volume' },
+    { field: 'AIT' },
+    { field: 'value', },
+    // {
+    //   field: '', width: 100, cellRenderer: function (params) {
+    //     return '<span><i class="ti-bar-chart-alt menu-icon"></i></span>';
+    //   }
+    // },
+  ];
+
+  rowData = [
+    { google_search: 'How to learn music', content_snippet: 'Leverage agile frameworks to provide a robust synopsis for high level overviews. Aproaches to collaborative...', volume: 'Celica', AIT: 35000, value: '$35 USD' },
+    { google_search: 'How to learn music', content_snippet: 'Leverage agile frameworks to provide a robust synopsis for high level overviews. Aproaches to collaborative...', volume: 'Mondeo', AIT: 32000, value: '$32 USD' },
+    { google_search: 'How to learn music', content_snippet: 'Leverage agile frameworks to provide a robust synopsis for high level overviews. Aproaches to collaborative...', volume: 'Boxter', AIT: 72000, value: '$72 USD' }
+  ];
 
   onQuickFilterChanged() {
-    this.gridApi.setQuickFilter(document.getElementById('quickFilter'));
+    this.gridApi.setQuickFilter((<HTMLInputElement>document.getElementById('quickFilter')).value);
   }
-
   onGridReady(params) {
     this.gridApi = params.api;
     this.gridColumnApi = params.columnApi;
-    this.rowData = [{
-      age: 23,
-      athlete: "Michael Phelps",
-      bronze: 0,
-      country: "United States",
-      date: "24/08/2008",
-      gold: 8,
-      silver: 0,
-      sport: "Swimming",
-      total: 8,
-      year: 2008,
-    },
-    {
-      age: 23,
-      athlete: "Michael Phelps",
-      bronze: 0,
-      country: "United States",
-      date: "24/08/2008",
-      gold: 8,
-      silver: 0,
-      sport: "Swimming",
-      total: 8,
-      year: 2008,
-    }, {
-      age: 23,
-      athlete: "Michael Phelps",
-      bronze: 0,
-      country: "United States",
-      date: "24/08/2008",
-      gold: 8,
-      silver: 0,
-      sport: "Swimming",
-      total: 8,
-      year: 2008,
-    }, {
-      age: 23,
-      athlete: "Michael Phelps",
-      bronze: 0,
-      country: "United States",
-      date: "24/08/2008",
-      gold: 8,
-      silver: 0,
-      sport: "Swimming",
-      total: 8,
-      year: 2008,
-    }, {
-      age: 23,
-      athlete: "Michael Phelps",
-      bronze: 0,
-      country: "United States",
-      date: "24/08/2008",
-      gold: 8,
-      silver: 0,
-      sport: "Swimming",
-      total: 8,
-      year: 2008,
-    },]
-    // this.http
-    //   .get('https://www.ag-grid.com/example-assets/olympic-winners.json')
-    //   .subscribe((data) => {
-    //     this.rowData = data;
-    //     console.log(data);
-
-    //   });
   }
+
 }

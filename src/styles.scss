@@ -1,5 +1,5 @@
 @import "../node_modules/ag-grid-community/dist/styles/ag-grid.css";
-@import "../node_modules/ag-grid-community/dist/styles/ag-theme-alpine.css";
+@import "../node_modules/ag-grid-community/dist/styles/ag-theme-material.css";
 
 // ////////////////////////////////////////////////////////////////////////////
 // For Standars Saaa
@@ -408,6 +408,10 @@ header {
       }
 
     }
+  }
+
+  .fontAwesome {
+    font-family: 'Helvetica', FontAwesome, sans-serif;
   }
 
   .second-section {
