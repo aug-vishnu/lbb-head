@@ -33,8 +33,8 @@
       </a>
     </li> -->
     <li class="nav-item">
-      <a class="nav-link" (click)="toValhalla(10)" data-toggle="collapse" href="#ui-basic" aria-expanded="false"
-        aria-controls="ui-basic">
+      <a class="nav-link" (click)="toValhalla(10)" data-toggle="collapse" [routerLink]="['/dashboard']"
+        aria-expanded=" false" aria-controls="ui-basic">
         <i class="ti-bell menu-icon"></i>
         <span class="menu-title">Dashboard</span>
         <i class="menu-arrow"></i>
@@ -89,7 +89,7 @@
 
 
     <!-- Nav Single -->
-    <li class="nav-item nav30" (click)="toValhalla(30)" [routerLink]="['/dashboard/vendor-management']">
+    <li class="nav-item nav30" (click)="toValhalla(30)" [routerLink]="['/dashboard/publishing-pages-edit']">
       <a class="nav-link">
         <i class="ti-layers-alt menu-icon"></i>
         <span class="menu-title">Pages</span>

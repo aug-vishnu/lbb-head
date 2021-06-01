@@ -22,7 +22,7 @@ $white-light-gray : #f9f9f9;
 .aspect-tab {
   position: relative;
   width: 100%;
-  max-width: 1000px;
+  // max-width: 1000px;
   margin: 0 auto 10px;
   border-color: #FFF !important;
   border-radius: 4px;
@@ -36,6 +36,21 @@ $white-light-gray : #f9f9f9;
   }
 }
 
+.buttons {
+
+
+  width: 35%;
+
+  .btn {
+    padding: 1em 0em;
+  }
+
+  .btn-light {
+    background-color: #CDCDD8 !important;
+    color: #000000 !important;
+  }
+}
+
 .aspect-input {
   display: none;
 }
@@ -46,6 +61,19 @@ $white-light-gray : #f9f9f9;
 
 .aspect-input:checked~.aspect-content:after {
   transform: rotate(0);
+}
+
+.aspect-input:checked~.aspect-content .aspect-stat {
+  display: none !important;
+}
+
+.aspect-input:checked~.aspect-content .buttons {
+  display: flex !important;
+}
+
+.buttons {
+  display: none;
+
 }
 
 .aspect-label {
@@ -67,54 +95,69 @@ $white-light-gray : #f9f9f9;
 }
 
 .aspect-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
-  display: block;
-  height: 80px;
+  height: 70px;
   margin: 0;
-  padding: 0 87px 0 30px;
+  padding: 0 20px 0 0px;
+  text-align: right;
   // font-size: 0;
-  white-space: nowrap;
-  cursor: pointer;
-  @include user-select();
+  // white-space: nowrap;
+  // cursor: pointer;
+  // @include user-select();
 
-  &:before,
-  &:after {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-  }
+
+  // &:after {
+  //   content: '';
+  //   text-align: left;
+  //   display: inline-block;
+  //   vertical-align: middle;
+  // }
 
   &:before {
     height: 100%;
   }
 
-  &:after {
-    position: absolute;
-    width: 24px;
-    height: 100%;
-    right: 30px;
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTI0IDI0SDBWMGgyNHoiIG9wYWNpdHk9Ii44NyIvPgogICAgICAgIDxwYXRoIGZpbGw9IiNBOUFDQUYiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTE1Ljg4IDE1LjI5TDEyIDExLjQxbC0zLjg4IDMuODhhLjk5Ni45OTYgMCAxIDEtMS40MS0xLjQxbDQuNTktNC41OWEuOTk2Ljk5NiAwIDAgMSAxLjQxIDBsNC41OSA0LjU5Yy4zOS4zOS4zOSAxLjAyIDAgMS40MS0uMzkuMzgtMS4wMy4zOS0xLjQyIDB6Ii8+CiAgICA8L2c+Cjwvc3ZnPgo=');
-    background-repeat: no-repeat;
-    background-position: center;
-    transform: rotate(180deg);
-  }
+  // &:after {
+  //   position: absolute;
+  //   width: 24px;
+  //   height: 100%;
+  //   right: 30px;
+  //   background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTI0IDI0SDBWMGgyNHoiIG9wYWNpdHk9Ii44NyIvPgogICAgICAgIDxwYXRoIGZpbGw9IiNBOUFDQUYiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTE1Ljg4IDE1LjI5TDEyIDExLjQxbC0zLjg4IDMuODhhLjk5Ni45OTYgMCAxIDEtMS40MS0xLjQxbDQuNTktNC41OWEuOTk2Ljk5NiAwIDAgMSAxLjQxIDBsNC41OSA0LjU5Yy4zOS4zOS4zOSAxLjAyIDAgMS40MS0uMzkuMzgtMS4wMy4zOS0xLjQyIDB6Ii8+CiAgICA8L2c+Cjwvc3ZnPgo=');
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   transform: rotate(180deg);
+  // }
 }
 
 .aspect-name {
-  display: inline-block;
+  // display: inline-block;
   // width: 75%;
-  // margin-left: 16px;
+  margin-left: 16px;
+  // width: 70%;
   font-weight: 800;
+  // text-align: left;
   // font-size: 1em !important;
   color: $header-black;
-  white-space: normal;
-  text-align: left;
-  vertical-align: middle;
+  // white-space: normal;
+  // vertical-align: middle;
 }
 
 .aspect-stat {
-  width: 40%;
+  // width: 50%;
   text-align: right;
+
+  svg {
+    width: 1em;
+    margin-left: 1em;
+  }
+
+  input {
+    height: 1em;
+    width: 1em;
+  }
 }
 
 .all-opinions,
@@ -134,10 +177,10 @@ $white-light-gray : #f9f9f9;
   transition: max-height .3s;
 }
 
-.aspect-content>div,
-.aspect-stat>div {
-  display: inline-block;
-}
+// .aspect-content>div,
+// .aspect-stat>div {
+//   display: inline-block;
+// }
 
 .aspect-content>div {
   vertical-align: middle;
@@ -288,7 +331,7 @@ $white-light-gray : #f9f9f9;
   }
 
   .box-screen {
-    background-color: #F6F6F6;
+    background-color: none;
     border-radius: 1em;
     padding: 2em 2em;
     margin: 1em 0em;

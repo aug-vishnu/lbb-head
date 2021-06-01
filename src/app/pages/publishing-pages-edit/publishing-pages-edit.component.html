@@ -2,47 +2,27 @@
   <div class="screen">
     <div class="top-line">
       <div class="content-one">Content Snippets <span>(82)</span></div>
-      <div class="content-two">
-        <button class="btn" type="submit">
+      <div class="content-two" [routerLink]="['/dashboard/publishing-pages']" routerLinkActive="router-link-active">
+        <button class="btn">
           Next
         </button>
       </div>
     </div>
     <div class="box-screen">
+
       <div id="aspect-content">
         <div class="aspect-tab">
-          <input id="item-18" type="checkbox" class="aspect-input" name="aspect">
-          <label for="item-18" class="aspect-label"></label>
-          <div class="aspect-content content">
-            <div class="aspect-info">
-              <span class="aspect-name">How to make food at home? </span>
-            </div>
-          </div>
-          <div class="aspect-tab-content">
-            <div class="sentiment-wrapper">
-              <div class="opinion-header">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet
-                magnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet
-                magna
-                efficitur consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit
-                amet magna
-                efficitur consequatLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit
-                amet magna
-                efficitur consequatLorem ipsum
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="aspect-content">
-        <div class="aspect-tab">
-          <input id="item-02" type="checkbox" class="aspect-input" name="aspect">
-          <label for="item-02" class="aspect-label"></label>
-          <div class="aspect-content content">
+          <input id="item-01" type="checkbox" class="aspect-input" name="aspect">
+          <label for="item-01" class="aspect-label"></label>
+          <div class="aspect-content">
             <div class="aspect-info">
               <span class="aspect-name">How to make food at home? </span>
             </div>
             <div class="aspect-stat">
+              <svg width="39" height="42" viewBox="0 0 39 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="39" height="41.4969" rx="18.5" fill="#F7FAFC" />
+                <path d="M12 17.0234L19.5 24.4716L27 17.0234" stroke="#1ABE97" stroke-width="4" />
+              </svg>
               <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path opacity="0.5"
                   d="M0 22.8199V28.5826H6.24913L24.6799 11.5866L18.4308 5.82392L0 22.8199ZM29.5126 7.13012C30.1625 6.5308 30.1625 5.56268 29.5126 4.96336L25.6131 1.36746C24.9632 0.768139 23.9133 0.768139 23.2634 1.36746L20.2139 4.17964L26.463 9.9423L29.5126 7.13012Z"
@@ -60,9 +40,17 @@
                   d="M28.2367 12.68C28.9893 13.472 28.9893 14.756 28.2367 15.5479L16.2734 28.7292C15.5207 29.5211 14.3004 29.5211 13.5477 28.7292L7.76568 22.6455C7.013 21.8536 7.013 20.5696 7.76568 19.7777C8.51836 18.9857 9.73869 18.9857 10.4914 19.7777L14.9106 24.4274L25.511 12.68C26.2637 11.8881 27.484 11.8881 28.2367 12.68Z"
                   fill="white" />
               </svg>
-
+            </div>
+            <div class="buttons fr">
+              <button class="btn" type="submit">
+                Save Edit
+              </button>
+              <button class="btn btn-light ml-2" type="submit">
+                Cancel
+              </button>
             </div>
           </div>
+
           <div class="aspect-tab-content">
             <div class="sentiment-wrapper">
               <div class="opinion-header">
@@ -79,15 +67,106 @@
           </div>
         </div>
       </div>
+
+      <div id="aspect-content">
+        <div class="aspect-tab">
+          <input id="item-02" type="checkbox" class="aspect-input" name="aspect">
+          <label for="item-02" class="aspect-label"></label>
+          <div class="aspect-content">
+            <div class="aspect-info">
+              <span class="aspect-name">How to make food at home? </span>
+            </div>
+            <div class="aspect-stat">
+              <svg width="39" height="42" viewBox="0 0 39 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="39" height="41.4969" rx="18.5" fill="#F7FAFC" />
+                <path d="M12 17.0234L19.5 24.4716L27 17.0234" stroke="#1ABE97" stroke-width="4" />
+              </svg>
+              <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.5"
+                  d="M0 22.8199V28.5826H6.24913L24.6799 11.5866L18.4308 5.82392L0 22.8199ZM29.5126 7.13012C30.1625 6.5308 30.1625 5.56268 29.5126 4.96336L25.6131 1.36746C24.9632 0.768139 23.9133 0.768139 23.2634 1.36746L20.2139 4.17964L26.463 9.9423L29.5126 7.13012Z"
+                  fill="#9A9AB0" />
+              </svg>
+              <svg width="36" height="39" viewBox="0 0 36 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1.35" y="1.94766" width="33.3" height="35.6049" rx="4.05" stroke="#16D3B5"
+                  stroke-width="2.7" />
+              </svg>
+              <svg width="36" height="39" viewBox="0 0 36 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="0.597656" width="36" height="38.3049" rx="3.6" fill="#16D3B5" />
+                <rect x="1.35" y="1.94766" width="33.3" height="35.6049" rx="4.05" stroke="#16D3B5"
+                  stroke-width="2.7" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M28.2367 12.68C28.9893 13.472 28.9893 14.756 28.2367 15.5479L16.2734 28.7292C15.5207 29.5211 14.3004 29.5211 13.5477 28.7292L7.76568 22.6455C7.013 21.8536 7.013 20.5696 7.76568 19.7777C8.51836 18.9857 9.73869 18.9857 10.4914 19.7777L14.9106 24.4274L25.511 12.68C26.2637 11.8881 27.484 11.8881 28.2367 12.68Z"
+                  fill="white" />
+              </svg>
+            </div>
+            <div class="buttons fr">
+              <button class="btn" type="submit">
+                Save Edit
+              </button>
+              <button class="btn btn-light ml-2" type="submit">
+                Cancel
+              </button>
+            </div>
+          </div>
+
+          <div class="aspect-tab-content">
+            <div class="sentiment-wrapper">
+              <div class="opinion-header">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet
+                magnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet
+                magna
+                efficitur consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit
+                amet magna
+                efficitur consequatLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit
+                amet magna
+                efficitur consequatLorem ipsum
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div id="aspect-content">
         <div class="aspect-tab">
           <input id="item-03" type="checkbox" class="aspect-input" name="aspect">
           <label for="item-03" class="aspect-label"></label>
-          <div class="aspect-content content">
+          <div class="aspect-content">
             <div class="aspect-info">
               <span class="aspect-name">How to make food at home? </span>
             </div>
+            <div class="aspect-stat">
+              <svg width="39" height="42" viewBox="0 0 39 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="39" height="41.4969" rx="18.5" fill="#F7FAFC" />
+                <path d="M12 17.0234L19.5 24.4716L27 17.0234" stroke="#1ABE97" stroke-width="4" />
+              </svg>
+              <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.5"
+                  d="M0 22.8199V28.5826H6.24913L24.6799 11.5866L18.4308 5.82392L0 22.8199ZM29.5126 7.13012C30.1625 6.5308 30.1625 5.56268 29.5126 4.96336L25.6131 1.36746C24.9632 0.768139 23.9133 0.768139 23.2634 1.36746L20.2139 4.17964L26.463 9.9423L29.5126 7.13012Z"
+                  fill="#9A9AB0" />
+              </svg>
+              <svg width="36" height="39" viewBox="0 0 36 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1.35" y="1.94766" width="33.3" height="35.6049" rx="4.05" stroke="#16D3B5"
+                  stroke-width="2.7" />
+              </svg>
+              <svg width="36" height="39" viewBox="0 0 36 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="0.597656" width="36" height="38.3049" rx="3.6" fill="#16D3B5" />
+                <rect x="1.35" y="1.94766" width="33.3" height="35.6049" rx="4.05" stroke="#16D3B5"
+                  stroke-width="2.7" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M28.2367 12.68C28.9893 13.472 28.9893 14.756 28.2367 15.5479L16.2734 28.7292C15.5207 29.5211 14.3004 29.5211 13.5477 28.7292L7.76568 22.6455C7.013 21.8536 7.013 20.5696 7.76568 19.7777C8.51836 18.9857 9.73869 18.9857 10.4914 19.7777L14.9106 24.4274L25.511 12.68C26.2637 11.8881 27.484 11.8881 28.2367 12.68Z"
+                  fill="white" />
+              </svg>
+            </div>
+            <div class="buttons fr">
+              <button class="btn" type="submit">
+                Save Edit
+              </button>
+              <button class="btn btn-light ml-2" type="submit">
+                Cancel
+              </button>
+            </div>
           </div>
+
           <div class="aspect-tab-content">
             <div class="sentiment-wrapper">
               <div class="opinion-header">
@@ -104,56 +183,7 @@
           </div>
         </div>
       </div>
-
     </div>
 
-  </div>
-  <div class="score-bar">
-    <div class="screen-two">
-      <div class="top-line">Lorem ipsum</div>
-      <div class="overall-score">
-        <div class="score m-0">
-          <div class="score-name">Overall Score</div>
-          <div class="score-value"> 85</div>
-        </div>
-        <a>
-          See Performance
-        </a>
-      </div>
-      <!--  -->
-      <div class="premium-score">
-        <div class="score-one">
-          <div class="score">
-            <div class="score-name">Plagiarism score</div>
-            <div class="score-value"> 85</div>
-          </div>
-          <button class="btn" type="submit">
-            Check Plagiarism
-          </button>
-        </div>
-        <hr>
-        <div class="score-two">
-          <div class="score">
-            <div class="score-name">Content score</div>
-            <div class="score-value"> 85</div>
-          </div>
-          <button class="btn" type="submit">
-            Content Spin
-          </button>
-        </div>
-        <hr>
-        <div class="score-three">
-          <div class="score">
-            <div class="score-name">Grammatical</div>
-            <div class="score-value"> 85</div>
-          </div>
-          <button class="btn" type="submit">
-            Check Grammar
-          </button>
-        </div>
-      </div>
-      <!--  -->
-
-    </div>
   </div>
 </div>
