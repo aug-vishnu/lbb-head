@@ -42,6 +42,10 @@
 
 }
 
+.btn {
+  padding: 1.2em 3em !important;
+}
+
 
 .form-group {
 
@@ -72,6 +76,7 @@
     color: #12E4B2;
     text-align: center;
     font-weight: 600;
+    // padding: 0 3em;
     height: 20vh !important;
     outline: none !important;
   }
@@ -103,6 +108,15 @@
   width: 40% !important;
 }
 
+.no-of-keywords {
+  // height: 20vh;
+  background-color: #F6F6F6 !important;
+  width: 100vh;
+  color: #8692A6;
+  font-weight: 400;
+  text-align: right;
+  padding: 1em;
+}
 
 .form-uh {
   display: flex;
