@@ -94,6 +94,13 @@
       input::placeholder::before {
         content: "\f106";
       }
+
+      input::-webkit-input-placeholder::after {
+        // color: white;
+        width: 1000px;
+        background-image: url(../../../assets/icons/Container.png);
+        // border: none;
+      }
     }
   }
 }

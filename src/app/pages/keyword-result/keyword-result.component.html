@@ -12,11 +12,11 @@
       <div class="top-bar fr">
         <div class="count fr">
           <div class="all">All (15)</div>
-          <div class="selected">Selected(5)</div>
+          <div class="selected">Selected({{rowCount}})</div>
         </div>
         <div class="search fr">
-          <input type="text" (input)="onQuickFilterChanged()" id="quickFilter" class="form-control fontAwesome"
-            placeholder="Search Keywords" />
+          <input type="text" (input)="onQuickFilterChanged()" placeholder="&#xF002; Search Keywords"
+            class="form-control" style="font-family: Arial, 'Font Awesome 5 Free'" />
           <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M0.0859375 0V6.469L6.18948 11.469V18.618L12.293 15.618V11.469L18.3966 6.469V0H0.0859375ZM16.3621 2V4H2.12045V2H16.3621ZM10.2585 10.531V14.382L8.22399 15.382V10.531L2.69215 6H15.7904L10.2585 10.531Z"
@@ -31,7 +31,8 @@
       <div class="not-premium-cta">
         <ag-grid-angular style="width: 100%; height: 100vh;" class="ag-theme-material" [defaultColDef]="defaultColDef"
           [suppressRowClickSelection]="true" [rowSelection]="rowSelection" (gridReady)="onGridReady($event)"
-          [rowData]="rowData" [columnDefs]="columnDefs" [getRowClass]="getRowClass">
+          [rowData]="rowData" [columnDefs]="columnDefs" [getRowClass]="getRowClass"
+          (selectionChanged)="onSelectionChanged($event)">
         </ag-grid-angular>
         <button class="btn" type="submit">
           Unlock Premium<svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">

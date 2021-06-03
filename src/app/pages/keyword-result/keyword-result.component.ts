@@ -10,6 +10,7 @@ export class KeywordResultComponent implements OnInit {
   ngOnInit() { }
 
   gridApi;
+  rowCount = 0;
   gridColumnApi;
   rowStyle = { background: 'black' };
 
@@ -67,5 +68,7 @@ export class KeywordResultComponent implements OnInit {
     this.gridApi = params.api;
     this.gridColumnApi = params.columnApi;
   }
-
+  onSelectionChanged(event) {
+    this.rowCount = event.api.getSelectedNodes().length;
+  }
 }

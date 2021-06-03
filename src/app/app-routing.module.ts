@@ -52,7 +52,22 @@ const routes: Routes = [
     ]
   }
 ]
+// URL's for "LBB agency"
 
+// Login Page = https://lbb-head.vercel.app/login
+// Register Page = https://lbb-head.vercel.app/signup
+// Account Page = https://lbb-head.vercel.app/account
+
+// On - boarding Page = https://lbb-head.vercel.app/onboarding
+// Keyword List Page = https://lbb-head.vercel.app/keyword-lists
+
+// Dashboard Page = https://lbb-head.vercel.app/dashboard
+// Keywords Results Page = https://lbb-head.vercel.app/research-results
+// Article Spinner, Publishing, Quality Check Page = https://lbb-head.vercel.app/publishing
+// Publishing Edit Page = https://lbb-head.vercel.app/publishing-page-edit
+
+// Payment Personal Info Page = https://lbb-head.vercel.app/payment-personal-info
+// Payment Card Info Page = https://lbb-head.vercel.app/payment-card-info
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
