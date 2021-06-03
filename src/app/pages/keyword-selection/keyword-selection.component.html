@@ -16,7 +16,7 @@
             <label>Keywords Explorer </label>
             <div class="label-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Pellentesque a massa faucibus, gravida ipsum at.</div>
-            <input type="text" value="google,youtube,keywords" class="form-control" data-role="tagsinput">
+            <input type="text" class="mt-3" value="google,youtube,keywords" class="form-control" data-role="tagsinput">
             <!-- <input name="email" type="email" class="form-control" required placeholder=""> -->
           </div>
           <a class="upload-csv" type="submit">
@@ -45,7 +45,8 @@
                 fill="white" />
             </svg>
           </a>
-          <button data-toggle="modal" class="btn login-button button" type="submit">
+          <button [routerLink]="['/dashboard']" routerLinkActive="router-link-active" data-toggle="modal"
+            class="btn login-button button" type="submit">
             Start Analysis
           </button>
         </div>

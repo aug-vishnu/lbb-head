@@ -2,7 +2,7 @@
   <div class="signin-section ">
     <img src="../../../assets/icons/nav.png" class="logo" alt="Screen">
     <div id="content-part">
-      <svg width="705" height="900" viewBox="0 0 705 900" fill="none" xmlns="http://www.w3.org/2000/svg"
+      <svg viewBox="0 0 705 900" fill="none" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink">
         <rect x="-3" y="-106" width="708" height="1152" fill="url(#pattern0)" />
         <path opacity="0.02"
@@ -937,9 +937,10 @@
         <div class="form-uh">
           <div class="form-group">
             <label>Add project and start your journey </label>
-            <input name="email" type="email" class="form-control" required placeholder="">
+            <input name="text" type="text" class="form-control" required placeholder="">
           </div>
-          <button data-toggle="modal" class="btn login-button button" type="submit">
+          <button [routerLink]="['/keyword-lists']" routerLinkActive="router-link-active" data-toggle="modal"
+            class="btn login-button button" type="submit">
             Next
           </button>
         </div>

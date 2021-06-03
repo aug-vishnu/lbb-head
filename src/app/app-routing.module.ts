@@ -19,35 +19,35 @@ import { PaymentCardInfoComponent } from './pages/payment-card-info/payment-card
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'signin', pathMatch: 'full', },
+  { path: '', redirectTo: 'login', pathMatch: 'full', },
 
   // Auth
-  { path: 'signin', component: SigninComponent },
+  { path: 'login', component: SigninComponent },
   { path: 'signup', component: SignupComponent },
 
-  { path: 'on-boarding', component: OnboardingComponent },
+  { path: 'onboarding', component: OnboardingComponent },
 
-  { path: 'keyword-selection', component: KeywordSelectionComponent },
+  { path: 'keyword-lists', component: KeywordSelectionComponent },
 
   // Admin-Panel
   {
-    path: 'dashboard',
+    path: '',
     component: DashboardNavComponent,
     // canActivate: [AuthGuard],
     children: [
-      { path: '', component: DashboardHomeComponent },
+      { path: 'dashboard', component: DashboardHomeComponent },
 
-      { path: 'account-settings', component: AccountSettingsComponent },
+      { path: 'account', component: AccountSettingsComponent },
 
-      { path: 'pricing', component: PricingComponent },
+      { path: 'billing', component: PricingComponent },
 
       { path: 'payment-personal-info', component: PaymentPersonalInfoComponent },
       { path: 'payment-card-info', component: PaymentCardInfoComponent },
 
-      { path: 'keyword-result', component: KeywordResultComponent },
+      { path: 'research-results', component: KeywordResultComponent },
 
-      { path: 'publishing-pages', component: PublishingPagesComponent },
-      { path: 'publishing-pages-edit', component: PublishingPagesEditComponent },
+      { path: 'publishing', component: PublishingPagesComponent },
+      { path: 'publishing-page-edit', component: PublishingPagesEditComponent },
 
     ]
   }
