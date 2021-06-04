@@ -4,6 +4,10 @@
 // ////////////////////////////////////////////////////////////////////////////
 // For Standars Saaa
 // ////////////////////////////////////////////////////////////////////////////
+.main-panel {
+  transition: width 0.25s ease, margin 0.25s ease;
+  width: 100%;
+}
 
 .bootstrap-tagsinput {
   border: 0px solid rgb(204, 204, 204) !important;
@@ -18,7 +22,7 @@
   line-height: 25px;
   cursor: text;
   height: 30vh;
-  width: 100vh;
+  width: 100vh !important;
 
   input {
     outline: none !important;
@@ -84,7 +88,7 @@
   padding-top: 60px !important;
   background-color: #F7FAFC;
   display: flex;
-  justify-content: center;
+  justify-content: stretch;
   margin: 0;
   width: 100% !important;
 }
@@ -125,6 +129,7 @@ body {
   padding-bottom: 12px;
 
 }
+
 
 .screen {
   // margin-top: 20vh;
@@ -365,7 +370,7 @@ header {
       background-color: #1ABE97;
       font-weight: 600;
       box-shadow: 0px 4px 50px 0px #00000017;
-
+      text-align: center !important;
     }
 
 

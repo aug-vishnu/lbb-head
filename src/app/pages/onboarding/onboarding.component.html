@@ -937,12 +937,12 @@
         <div class="form-uh ">
           <div class="form-group onboarding">
             <label>Add project and start your journey </label>
-            <input name="text" type="text" class="form-control " required placeholder="">
+            <input name="text" id="icon" type="text" class="form-control " required placeholder="">
           </div>
-          <button [routerLink]="['/keyword-lists']" routerLinkActive="router-link-active" data-toggle="modal"
-            class="btn login-button button" type="submit">
+          <a href="/keyword-lists" class="btn login-button button" type="submit">
             Next
-          </button>
+          </a>
+
         </div>
       </form>
     </div>
