@@ -11,6 +11,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 2em;
 
   .part-one {
     color: #063E6D;
@@ -49,7 +50,7 @@
 
 .form-group {
 
-  margin-top: 2em;
+  margin-top: 1em;
   display: flex;
   width: 80%;
   flex-direction: column;
@@ -57,7 +58,7 @@
 
   label {
     font-size: 1.2em;
-    margin-top: 1.6em;
+    margin-top: 1em;
     text-align: center;
     font-weight: 600;
     color: #000000;
@@ -75,6 +76,7 @@
     font-size: .8em;
     color: #12E4B2;
     text-align: center;
+    width: 20px !important;
     font-weight: 600;
     // padding: 0 3em;
     height: 20vh !important;
@@ -111,15 +113,20 @@
 .no-of-keywords {
   // height: 20vh;
   background-color: #F6F6F6 !important;
-  width: 100vh;
+  width: 100%;
   color: #8692A6;
   font-weight: 400;
   text-align: right;
   padding: 1em;
 }
 
+.btn {
+  padding: .8em !important;
+}
+
 .form-uh {
   display: flex;
+  height: 80vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;

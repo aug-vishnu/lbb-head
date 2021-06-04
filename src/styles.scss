@@ -23,6 +23,7 @@
   input {
     outline: none !important;
     border: none !important;
+    width: 30%;
     background-color: #F6F6F6;
     background-image: url(./assets/icons/addkeyword.png);
     background-repeat: no-repeat;
@@ -84,7 +85,8 @@
   background-color: #F7FAFC;
   display: flex;
   justify-content: center;
-  width: 100%;
+  margin: 0;
+  width: 100% !important;
 }
 
 body {
@@ -244,6 +246,35 @@ header {
     padding: 1em 5em 1em 5em;
     background-color: white;
   }
+}
+
+.navbar-menu-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .logo {
+    width: 20%;
+  }
+
+  .menus {
+    width: 60%;
+    color: #FFF;
+    list-style: none;
+    // margin: 0;
+    margin: 0 6em;
+
+    .menu-title {
+      color: #FFF;
+      font-weight: 600;
+    }
+  }
+
+  .navbar-nav {
+    float: left;
+    width: 20%;
+  }
+
 }
 
 // Sigin and Signup Components
