@@ -25,6 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { PublishingPagesComponent } from './pages/publishing-pages/publishing-pages.component';
 import { PublishingPagesEditComponent } from './pages/publishing-pages-edit/publishing-pages-edit.component';
 
+import { DragDropModule } from '@angular/cdk/drag-drop';
+
 @NgModule({
   declarations: [
     AppComponent,

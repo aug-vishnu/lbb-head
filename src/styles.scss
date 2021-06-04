@@ -664,14 +664,29 @@ header {
   justify-content: space-around;
   align-items: center;
 
-  button {
+  .not-premium {
     position: absolute;
-    background-color: #00355D !important;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 20% !important;
-    // margin: 0em 2em;
+
+  }
+
+  button {
+    background-color: #00355D !important;
+  }
+
+  .content {
+    color: #1ABE97;
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 1em;
+
+    span {
+      font-weight: 800;
+    }
   }
 
   svg {
