@@ -104,6 +104,10 @@ body {
   padding: 0;
 }
 
+.nav-item {
+  cursor: pointer;
+}
+
 .sidebar .nav.sub-menu .nav-item .nav-link.active {
   color: #000;
 }

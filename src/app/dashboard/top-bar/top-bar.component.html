@@ -21,7 +21,44 @@
 
 
     <ul class="menus fr justify-content-around">
-      <li class="nav-item">
+      <li class="nav-item fr  dropdown">
+        <a class="nav-link  fr align-items-center" data-toggle="dropdown" id="profileDropdown">
+          <div class="content">
+            <h5 style="color: white;" class="m-0"> Dashboard</h5>
+          </div>
+          <svg class="ml-2" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L6 6L11 1" stroke="white" stroke-width="2" />
+          </svg>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+          <a class="dropdown-item" [routerLink]="['/account-settings']">
+            Start new
+          </a>
+          <a class="dropdown-item">
+            View Projects
+          </a>
+        </div>
+      </li>
+      <li class="nav-item fr  dropdown">
+        <a class="nav-link  fr align-items-center" data-toggle="dropdown" id="profileDropdown">
+          <div class="content">
+            <h5 style="color: white;" class="m-0"> Keywords</h5>
+          </div>
+          <svg class="ml-2" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L6 6L11 1" stroke="white" stroke-width="2" />
+          </svg>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+          <a class="dropdown-item" [routerLink]="['/keyword-lists']">
+            Keyword List
+          </a>
+          <a class="dropdown-item" [routerLink]="['/research-results']">
+            Keyword Results
+          </a>
+
+        </div>
+      </li>
+      <!-- <li class="nav-item">
         <a class="nav-link" data-toggle="collapse" [routerLink]="['/dashboard']" aria-expanded=" false"
           aria-controls="ui-basic">
           <span class="menu-title">Dashboard</span>
@@ -34,24 +71,20 @@
             <li class="nav-item"> <a class="nav-link">View projects</a></li>
           </ul>
         </div>
-      </li>
+      </li> -->
       <!-- Nav -->
 
-      <!-- Nav Single -->
-      <li class="nav-item nav20" [routerLink]="['/keyword-lists']">
+      <!-- <li class="nav-item nav20" [routerLink]="['/keyword-lists']">
         <a class="nav-link">
           <span class="menu-title">Keyword List </span>
         </a>
       </li>
-      <!-- Nav Single -->
 
-      <!-- Nav Single -->
       <li class="nav-item nav21" [routerLink]="['/research-results']">
         <a class="nav-link">
           <span class="menu-title">Keyword Results </span>
         </a>
-      </li>
-      <!-- Nav Single -->
+      </li> -->
 
 
       <!-- Nav Single -->

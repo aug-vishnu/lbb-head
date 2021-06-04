@@ -36,3 +36,17 @@ nav {
     font-size: 0.8em;
   }
 }
+
+
+.dropdown .dropdown-menu {
+  margin-top: 7px;
+  border-radius: 1em;
+  // box-shadow: 0px 1px 15px 1px rgb(230 234 236 / 35%);
+  box-shadow: none;
+
+  a {
+    font-size: .8rem;
+    padding: .4em 2em;
+    font-weight: 600;
+  }
+}
