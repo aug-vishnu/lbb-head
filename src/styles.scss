@@ -82,6 +82,9 @@
 .page-body-wrapper {
   padding-top: 60px !important;
   background-color: #F7FAFC;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 body {
@@ -120,7 +123,7 @@ body {
 .screen {
   // margin-top: 20vh;
   margin: 10vh 2em;
-  // max-width: 1700px;
+
 
   .top-line {
     font-weight: 800;
@@ -250,6 +253,13 @@ header {
   align-items: stretch;
   justify-content: space-between;
 
+  .logo {
+    position: fixed;
+    width: 15%;
+    // height: 10vh !important;
+    margin: 5vh;
+  }
+
   .onboarding {
     input::after {
       content: url(./assets/icons/addkeyword.png);
@@ -274,23 +284,40 @@ header {
   }
 
   #form-part {
-    zoom: .86;
+    // zoom: .86;
     width: 50%;
-    padding: 0em 4em;
+    // max-width: 1000px;
+    padding: 0em 0em;
     border-radius: 8px;
-    height: 100vh;
 
-    // .form-uh {
-    //   display: flex;
-    //   flex-direction: column;
-    //   align-items: center;
-    //   justify-content: center;
+    .segment {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center !important;
+      align-items: center !important;
 
-    // }
+      .form-uh {
 
-    .top-line {
-      margin: 3em 0em;
-      cursor: pointer;
+        width: 80vh !important;
+        // height: 80vh !important;
+
+        .top-line {
+          // margin-top: 0em !important;
+          // margin-bottom: 3em !important;
+          cursor: pointer;
+        }
+
+        .top-line-two {
+          display: flex;
+          justify-content: end;
+          margin: 0;
+          margin-bottom: 1em !important;
+          font-size: 1.7em;
+          font-weight: 800;
+        }
+      }
+
     }
 
     .btn {
@@ -306,11 +333,6 @@ header {
 
     }
 
-    h2 {
-      font-weight: 800;
-      margin-bottom: 1em;
-      font-size: 1.6em;
-    }
 
     .login-button:hover {
       color: #FFF;

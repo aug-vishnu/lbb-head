@@ -48,7 +48,7 @@
 
   .radio-one,
   .radio-two {
-    background-color: #1ABE97;
+    background-color: #F7FAFC;
     margin-right: 1em;
     padding: .8em 1em;
     width: 26%;
@@ -68,24 +68,42 @@
 
     .credit {
       svg {
-        fill: black !important;
+        fill: #ABBBC2 !important;
       }
     }
 
     .paypal {
       svg {
-        stroke: black !important;
+        stroke: #ABBBC2 !important;
       }
     }
 
-    svg {
-      path {
-        color: black !important;
+    .name {
+      color: #ABBBC2;
+    }
 
+
+  }
+
+  .active.radio-one,
+  .active.radio-two {
+    background-color: #1ABE97 !important;
+  }
+
+  .active {
+
+
+
+    .credit {
+      svg {
+        fill: #FFF !important;
       }
+    }
 
-      // stroke: black;
-
+    .paypal {
+      svg {
+        stroke: #FFF !important;
+      }
     }
 
     .name {
