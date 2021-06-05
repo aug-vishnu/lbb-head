@@ -25,8 +25,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { PublishingPagesComponent } from './pages/publishing-pages/publishing-pages.component';
 import { PublishingPagesEditComponent } from './pages/publishing-pages-edit/publishing-pages-edit.component';
 
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatIconModule } from '@angular/material/icon';
 import { DragDropModule } from '@angular/cdk/drag-drop';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +57,14 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    AgGridModule.withComponents([])
+    MatExpansionModule,
+    MatCheckboxModule,
+    MatCheckboxModule,
+    MatCheckboxModule,
+    MatIconModule,
+    DragDropModule,
+    AgGridModule.withComponents([]),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
