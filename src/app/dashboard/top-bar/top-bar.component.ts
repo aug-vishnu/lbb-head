@@ -12,12 +12,24 @@ export class TopBarComponent implements OnInit {
 
   constructor() { }
   ngOnInit(): void {
+    var body = $('body');
     // this.detail_shop()
+    $('[data-toggle="minimize"]').on("click", function () {
+      if ((body.hasClass('sidebar-toggle-display')) || (body.hasClass('sidebar-absolute'))) {
+        body.toggleClass('sidebar-hidden');
+      } else {
+        body.toggleClass('sidebar-icon-only');
+      }
+    });
   }
 
   Shop;
 
   logOut() {
     localStorage.removeItem('token')
+  }
+
+  toggleNav() {
+    console.log("asd");
   }
 }

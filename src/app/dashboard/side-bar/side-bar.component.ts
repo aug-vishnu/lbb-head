@@ -22,8 +22,16 @@ export class SideBarComponent implements OnInit {
     var value = localStorage.getItem('active_nav')
     // const { value } = await Storage.get({ key: 'active_nav' });
     this.activeNav = value
-    this.toValhalla(value)
-    // $(".nav" + value).addClass("active");
+
+    var location = window.location.href.split('/');
+    console.log(location[3]);
+
+    if (location[3] != 'dashboard') {
+      this.toValhalla(value)
+    }
+    else {
+      this.toValhalla(10)
+    }
     console.log(value);
   }
 
@@ -31,6 +39,8 @@ export class SideBarComponent implements OnInit {
   prviousNav = 1
   toValhalla(nav) {
     var element = $('ul.nav .nav-item')
+
+
     // Storage.set({ key: 'active_nav', value: nav });
     localStorage.setItem('active_nav', nav)
     console.log("asd", nav, typeof (nav), typeof (this.activeNav));
@@ -45,12 +55,16 @@ export class SideBarComponent implements OnInit {
       }
     });
     $(".nav" + nav).addClass("active");
-    $(".nav" + this.prviousNav).removeClass("active");
-    $(".sidebar").removeClass("active");
+    // $(".nav" + this.activeNav).removeClass("active");
+    // $(".sidebar").removeClass("active");
 
-    if (this.prviousNav == nav) {
-      this.prviousNav = nav
+    if (this.activeNav == nav) {
+      this.activeNav = nav
     }
+
+
+
+
   }
   // /////////////////////////////////////////////////////////////////////////////////////////////
 

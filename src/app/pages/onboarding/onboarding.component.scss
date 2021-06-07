@@ -22,7 +22,6 @@
 #content-part {
   display: flex;
   width: 50%;
-  height: 10%;
   flex-direction: column;
   // justify-content: space-between;
   // padding: 0em 1em 5em 0;
@@ -88,4 +87,14 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+
+
+#content-part {
+  background-image: url(../../../assets/icons/onboarding) !important;
+  background-repeat: no-repeat;
+  max-width: 900;
+  background-position: center center;
+  background-size: 100% 100vh;
 }

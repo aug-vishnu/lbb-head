@@ -31,7 +31,7 @@
   #content-part {
     display: flex;
     width: 50%;
-    height: 10%;
+    // height: 10%;
     flex-direction: column;
     justify-content: space-between;
     // padding: 0em 1em 5em 0;
@@ -134,4 +134,14 @@
     align-items: center;
   }
 
+}
+
+#content-part {
+  background-image: url(../../../assets/icons/side2) !important;
+  background-size: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-width: 900;
+
+  background-size: 100% 100vh;
 }

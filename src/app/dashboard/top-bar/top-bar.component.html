@@ -2,25 +2,23 @@
 
 <!-- Settings Part -->
 
-<nav class="navbar fixed-top">
-  <!-- <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-    <a class="navbar-brand brand-logo mr-5"><img src="../assets/icons/logo.svg" class="mr-2" alt="logo" /></a>
-    <a class="navbar-brand brand-logo-mini"><img src="../assets/icons/logo.svg" alt="logo" /></a>
-  </div> -->
+<nav class="navbar fixed-top ">
+  <div class="text-center navbar-brand-wrapper d-flex ">
+    <a class="navbar-brand brand-logo"><img src="../../../assets/icons/nav.png" alt="logo" /></a>
+    <a class="navbar-brand brand-logo-mini"><img src="../../../assets/icons/nav-mini" alt="logo" /></a>
+  </div>
   <div class="navbar-menu-wrapper">
-    <!-- <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
-      <span class="icon-menu"></span>
-    </button> -->
-
-
-    <!-- Search Bar -->
-
-    <div class="logo nav-item" [routerLink]="['/dashboard']">
+    <!-- <div class="logo nav-item" [routerLink]="['/dashboard']">
       <img src="../../../assets/icons/nav.png" alt="">
-    </div>
+    </div> -->
+    <button (click)="toggleNav()" class="navbar-toggler navbar-toggler align-self-center" type="button"
+      data-toggle="minimize">
+      <span class="icon-menu"></span>
+    </button>
 
 
-    <ul class="menus fr justify-content-around">
+
+    <!-- <ul class="menus fr justify-content-around">
       <li class="nav-item fr  dropdown">
         <a class="nav-link  fr align-items-center" data-toggle="dropdown" id="profileDropdown">
           <div class="content">
@@ -58,64 +56,26 @@
 
         </div>
       </li>
-      <!-- <li class="nav-item">
-        <a class="nav-link" data-toggle="collapse" [routerLink]="['/dashboard']" aria-expanded=" false"
-          aria-controls="ui-basic">
-          <span class="menu-title">Dashboard</span>
-          <i class="menu-arrow"></i>
-        </a>
-        <div class="collapse" id="ui-basic">
-          <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link">Start New</a>
-            </li>
-            <li class="nav-item"> <a class="nav-link">View projects</a></li>
-          </ul>
-        </div>
-      </li> -->
-      <!-- Nav -->
 
-      <!-- <li class="nav-item nav20" [routerLink]="['/keyword-lists']">
-        <a class="nav-link">
-          <span class="menu-title">Keyword List </span>
-        </a>
-      </li>
-
-      <li class="nav-item nav21" [routerLink]="['/research-results']">
-        <a class="nav-link">
-          <span class="menu-title">Keyword Results </span>
-        </a>
-      </li> -->
-
-
-      <!-- Nav Single -->
       <li class="nav-item nav30" [routerLink]="['/publishing']">
         <a class="nav-link">
           <span class="menu-title">Articles</span>
         </a>
       </li>
-      <!-- Nav Single -->
 
-
-      <!-- Nav Single -->
       <li class="nav-item nav50" [routerLink]="['/billing']">
         <a class="nav-link">
           <span class="menu-title">Billing</span>
         </a>
       </li>
-      <!-- Nav Single -->
 
-
-      <!-- Nav Single -->
       <li class="nav-item nav70" [routerLink]="['/account']">
         <a class="nav-link">
           <span class="menu-title">Settings</span>
         </a>
       </li>
-      <!-- Nav Single -->
+    </ul> -->
 
-    </ul>
-
-    <!-- Notification and account -->
 
     <ul class="navbar-nav navbar-nav-right">
       <li class="nav-item dropdown">
@@ -172,7 +132,7 @@
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="profileDropdown">
           <div class="content">
             <h5 style="color: white;" class="m-0"> Chris Martin</h5>
-            <div class="account-type">Free Account</div>
+            <!-- <div class="account-type">Free Account</div> -->
           </div>
           <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1 1L6 6L11 1" stroke="white" stroke-width="2" />

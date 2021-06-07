@@ -32914,7 +32914,7 @@ div.tagsinput span.tag a {
 }
 
 .sidebar .nav:not(.sub-menu)>.nav-item>.nav-link[aria-expanded="true"] {
-  border-radius: 8px 8px 0 0;
+  border-radius: 100%;
   background: #1ABE97;
   color: #fff;
 }
@@ -35672,11 +35672,11 @@ div.tagsinput span.tag a {
   }
 
   .sidebar-icon-only .sidebar .nav:not(.sub-menu) .nav-item.active {
-    border-radius: 0;
+    border-radius: 100%;
   }
 
   .sidebar-icon-only .sidebar .nav:not(.sub-menu) .nav-item:hover .nav-link {
-    border-radius: 0;
+    border-radius: 100%;
   }
 
   .sidebar-icon-only .sidebar .nav.sub-menu {
