@@ -1,0 +1,142 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+
+  li svg {
+    margin: 0 0.5em 0 0;
+  }
+}
+
+.pricing-box {
+  margin-top: 5vh;
+  padding: 2em;
+
+  .pricing-section {
+    background-color: white;
+    border-radius: 2em;
+  }
+
+  .top-para {
+    .first-line {
+      font-size: 1.8em;
+      color: #063E6D;
+      font-weight: 600;
+    }
+
+    .second-line {
+      margin-top: 1em;
+      width: 50%;
+      font-size: 0.7em;
+      color: #8692A6;
+    }
+  }
+
+  .pricing-section {
+    box-shadow: 0px 4px 99px 0px #00000017;
+    margin: 2em 0em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .pricing-card {
+      padding: 2em;
+
+      .price {
+        font-weight: 900;
+        font-size: 2em;
+
+        span {
+          font-weight: 200;
+          font-size: 0.5em;
+          color: #848199;
+        }
+      }
+
+      .pricing-details {
+        .title {
+          font-weight: 800;
+          font-size: 1.5em;
+          margin: 0.7em 0em 0.4em 0em;
+        }
+
+        .description {
+          font-weight: 400;
+          font-size: 0.8em;
+          color: #848199;
+        }
+
+        .points {
+          margin: 1em 0em;
+          color: #848199;
+        }
+      }
+    }
+
+    .pricing-cta {
+      background-color: #ebebeb;
+      color: #01365E;
+      padding: 1em 1em;
+      font-size: 0.8em;
+      margin: 2em 2em 1em 0em;
+      border-radius: 25px;
+      text-align: center;
+      font-weight: 800;
+      // width: 80%;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .popular {
+    width: 45%;
+    max-width: 400px;
+    box-shadow: 0px 38px 30px 0px #01365E33;
+    // padding: 0.6em;
+    margin-top: -2em;
+    margin-bottom: 2em;
+    background-color: #01365E;
+    border-radius: 22px;
+    color: white;
+
+    .top-banner {
+      display: flex;
+      // float: right;
+      flex-direction: row;
+      justify-content: flex-end;
+      // align-items: flex-end;
+
+      .most-popular {
+        background-color: white;
+        padding: 0.5em;
+        flex-wrap: wrap;
+        color: #01365E;
+        width: 50%;
+        text-align: center;
+        font-size: 0.6em;
+        font-weight: 800;
+        border-radius: 5px;
+        margin: 0em 0em 1em 0em;
+      }
+
+    }
+
+    .pricing-cta {
+      background-color: #fff;
+      margin: 2em 0em 0em 0em;
+    }
+
+    span,
+    .description,
+    .points {
+      color: white !important;
+    }
+
+    .price {
+      span {
+        color: #fff;
+      }
+    }
+  }
+}

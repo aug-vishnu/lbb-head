@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var $: any;
 
 @Component({
   selector: 'app-pricing',
@@ -11,5 +12,8 @@ export class PricingComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  toggleThing() {
+    var body = $('body');
+    console.log("Toogled");
+  }
 }
