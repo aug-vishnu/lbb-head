@@ -83,14 +83,14 @@ ul {
 
     .title {
       font-weight: 600;
-      font-size: 1em;
+      font-size: .9em;
       margin: 0.0em 0em 0.65em 0em;
     }
 
     .description {
       margin: 0em 0em 0.65em 0em;
       font-weight: 200;
-      font-size: 0.8em;
+      font-size: 0.7em;
       color: #01365E;
     }
 
@@ -103,8 +103,8 @@ ul {
     .pricing-cta {
       background-color: #1ABE97;
       color: #FFF;
-      padding: .9em 2.5em;
-      font-size: 0.8em;
+      padding: .9em 2em;
+      font-size: 0.7em;
       border-radius: 4px;
       text-align: center;
       font-weight: 5 00;
@@ -118,7 +118,6 @@ ul {
 
   .pricing {
     .title {
-
       margin-top: 1em;
     }
   }
@@ -199,7 +198,7 @@ ul {
       padding-left: 1em;
       padding-right: 1em;
       padding-top: .5em;
-      padding-bottom: .5em;
+      padding-bottom: .1em;
       top: 0;
       margin-top: -1.8em;
       border-radius: 4px;
@@ -213,10 +212,12 @@ ul {
     // margin-right: 1em;
     padding: .8em 2em;
     // width: 26%;
+    cursor: pointer;
     border-radius: .2em;
     display: flex;
     // align-items: center;
     flex-direction: column;
+    user-select: none;
     justify-content: center;
 
     .checkmark {

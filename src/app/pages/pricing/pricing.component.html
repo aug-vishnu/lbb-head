@@ -4,10 +4,10 @@
     <div class="second-line">Lorem ipsum dolor sit amet, consectetur elit</div>
 
     <div class="radio-cards fr">
-      <div class="radio-one active">
+      <div class="radio-one active" (click)="toggleThing(1)">
         <div class="name">Monthly</div>
       </div>
-      <div class="radio-two">
+      <div class="radio-two" (click)="toggleThing(2)">
         <div class="top-bar">20% Off</div>
         <div class="name">Annual</div>
       </div>
@@ -22,13 +22,15 @@
       </div>
       <div class="pricing-column pricing rest">
         <div class="title">Basic</div>
-        <div class="price"><span>$</span>99</div>
+        <div class="price" *ngIf="!isToggled"><span>$</span>99</div>
+        <div class="price" *ngIf="isToggled"><span>$</span>79</div>
         <div class="pricing-cta" [routerLink]="['/payment-personal-info']" routerLinkActive="router-link-active">Start
           Trail</div>
       </div>
       <div class="pricing-column pricing rest">
         <div class="title">Essentials </div>
-        <div class="price"><span>$</span>179</div>
+        <div class="price" *ngIf="!isToggled"><span>$</span>179</div>
+        <div class="price" *ngIf="isToggled"><span>$</span>150</div>
         <div class="pricing-cta" [routerLink]="['/payment-personal-info']" routerLinkActive="router-link-active">Start
           Trail</div>
       </div>
@@ -36,13 +38,15 @@
         <div class="popular-border"></div>
         <div class="popular">Most Popular</div>
         <div class="title">Standard</div>
-        <div class="price"><span>$</span>449</div>
+        <div class="price" *ngIf="!isToggled"><span>$</span>449</div>
+        <div class="price" *ngIf="isToggled"><span>$</span>400</div>
         <div class="pricing-cta" [routerLink]="['/payment-personal-info']" routerLinkActive="router-link-active">Start
           Trail</div>
       </div>
       <div class="pricing-column pricing rest">
         <div class="title">Enterprise</div>
-        <div class="price"><span>$</span>999</div>
+        <div class="price" *ngIf="!isToggled"><span>$</span>900</div>
+        <div class="price" *ngIf="isToggled"><span>$</span>789</div>
         <div class="pricing-cta" [routerLink]="['/payment-personal-info']" routerLinkActive="router-link-active">Start
           Trail</div>
       </div>

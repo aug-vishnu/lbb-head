@@ -368,6 +368,12 @@ header {
     justify-content: space-between;
     // padding: 0em 1em 5em 0;
     // margin: 5em 0em 28em 0;
+    background-image: url(./assets/icons/onboarding) !important;
+    background-repeat: no-repeat;
+    max-width: 900;
+    background-position: center center;
+    background-size: 100vh 120vh;
+
 
     img {
       height: 100vh !important;

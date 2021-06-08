@@ -9,6 +9,7 @@ export class PaymentCardInfoComponent implements OnInit {
 
   constructor() { }
 
+  isToggled = false
   ngOnInit(): void {
     $(document).ready(function () {
       $('.radio-group .radio').click(function () {
@@ -17,6 +18,20 @@ export class PaymentCardInfoComponent implements OnInit {
         $(this).addClass('selected');
       });
     });
+    this.isToggled = false
   }
 
+  toggleThing(x) {
+
+    this.isToggled = !this.isToggled
+    if (x == 1) {
+      $('.radio-one').addClass('active')
+      $('.radio-two').removeClass('active')
+    }
+    if (x == 2) {
+      $('.radio-two').addClass('active')
+      $('.radio-one').removeClass('active')
+    }
+
+  }
 }
