@@ -7,28 +7,11 @@
     <div class="profile-type">Free account</div> -->
     <div class="form-group">
       <!-- <label class="col-sm-3 col-form-label"></label> -->
-      <!-- <div class="">
-        <div class="dropdown">
-          <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton8"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            Export
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton8">
-            <a class="dropdown-item" href="#">As Google Doc</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">To Wordpress</a>
-            <div class="dropdown-divider"></div>
-          </div>
-        </div>
-      </div> -->
-      <div class="">
-        <select class="form-control">
-          <option>Project Name</option>
-          <option>Project Name 2</option>
-          <option>Project Name 3</option>
-          <option>Project Name 4</option>
-        </select>
-      </div>
+
+      <ng-select class="custom" [items]="cars" bindLabel="name" bindValue="id" [(ngModel)]="selectedCar">
+      </ng-select>
+
+
     </div>
   </div>
   <div class="profile-end"><svg width="224" height="1" viewBox="0 0 224 1" fill="none"

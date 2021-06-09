@@ -15,7 +15,14 @@ export class SideBarComponent implements OnInit {
     this.get_nav()
     // this.toValhalla(this.activeNav)
   }
+  selectedCar: number;
 
+  cars = [
+    { id: 1, name: 'Project Name' },
+    { id: 2, name: 'Project Name' },
+    { id: 3, name: 'Project Name' },
+    { id: 4, name: 'Project Name' },
+  ];
 
   activeNav: any
   async get_nav() {

@@ -24,6 +24,7 @@ import { KeywordResultComponent } from './pages/keyword-result/keyword-result.co
 import { HttpClientModule } from '@angular/common/http';
 import { PublishingPagesComponent } from './pages/publishing-pages/publishing-pages.component';
 import { PublishingPagesEditComponent } from './pages/publishing-pages-edit/publishing-pages-edit.component';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatCheckboxModule } from '@angular/material/checkbox';
@@ -31,6 +32,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,6 +57,8 @@ import { MatButtonModule } from '@angular/material/button';
   ],
   imports: [
     BrowserModule,
+    NgSelectModule,
+    FormsModule,
     AppRoutingModule,
     HttpClientModule,
     MatExpansionModule,

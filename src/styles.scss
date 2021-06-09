@@ -1,5 +1,6 @@
 @import "../node_modules/ag-grid-community/dist/styles/ag-grid.css";
 @import "../node_modules/ag-grid-community/dist/styles/ag-theme-material.css";
+@import "~@ng-select/ng-select/themes/default.theme.css";
 
 // ////////////////////////////////////////////////////////////////////////////
 // For Standars Saaa
@@ -59,10 +60,6 @@
   background-color: #1ABE97;
 }
 
-.form-group span {
-  color: #FFF !important;
-  // background-color: green;
-}
 
 .bootstrap-tagsinput .tag [data-role="remove"]:after {
   content: "X";
@@ -239,9 +236,9 @@ body {
   font-style: normal;
   font-weight: bold;
 
-  span {
-    color: red;
-  }
+  // span {
+  //   color: red;
+  // }
 
   .form-control {
     opacity: 1;
@@ -506,9 +503,10 @@ header {
   .form-group {
     margin: 0em 1em 0em 1em;
     padding-top: 2em;
+    width: 70%;
   }
 
-  .form-control {
+  .select-box {
     padding: 0;
     margin: 0;
     width: 100%;
@@ -520,13 +518,6 @@ header {
     color: black;
     text-align: center;
   }
-
-  option {
-    padding: 1em 0.3em;
-    min-height: 3em;
-
-  }
-
 
 }
 
