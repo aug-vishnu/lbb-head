@@ -1,6 +1,10 @@
 <body class="hero">
   <div class="signin-section ">
-    <img src="../../../assets/icons/nav.png" class="logo" alt="Screen">
+    <div class="top-bar">
+      <img src="../../../assets/icons/nav.png" class="logo" alt="Screen">
+      <a [routerLink]="['/login']" routerLinkActive="router-link-active">Already have an account? <span>Sign
+          In</span></a>
+    </div>
     <div id="content-part">
       <!-- <img src="../../../assets/icons/auth-screen.png" alt="Screen"> -->
     </div>
@@ -8,10 +12,9 @@
       <div class="segment">
         <div class="form-uh">
           <div class="top-line">
-            <a [routerLink]="['/login']" routerLinkActive="router-link-active">Already have an account? <span>Sign
-                In</span></a>
+
           </div>
-          <div class="top-line-two mt-3">Register</div>
+          <div class="top-line-two mt-5">Register</div>
           <form class="">
             <div class="form-group">
               <label>Full Name </label>

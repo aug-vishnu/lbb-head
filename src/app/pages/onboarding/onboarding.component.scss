@@ -1,9 +1,16 @@
+.top-bar {
+  .logo {
+    width: 16%;
+  }
+}
+
 .top-line {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 2em;
+  padding-left: 4vh;
+  width: 50%;
 
   .part-one {
     color: #063E6D;
@@ -83,7 +90,7 @@ a {
 
 .form-uh {
   display: flex;
-  height: 80vh;
+  height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
