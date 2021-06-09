@@ -362,11 +362,11 @@ header {
     justify-content: space-between;
     // padding: 0em 1em 5em 0;
     // margin: 5em 0em 28em 0;
-    background-image: url(./assets/icons/onboarding) !important;
+
     background-repeat: no-repeat;
-    max-width: 900;
     background-position: center center;
-    background-size: 100vh 120vh;
+    background-clip: padding-box;
+    background-size: cover;
 
 
     img {
@@ -424,7 +424,7 @@ header {
       border-radius: 4px;
       border: 2px solid #1ABE97;
       background-color: #1ABE97;
-      font-weight: 600;
+      font-weight: 400;
       box-shadow: 0px 4px 50px 0px #00000017;
       text-align: center !important;
     }
@@ -827,7 +827,7 @@ header {
 
     #content-part {
       display: flex;
-      width: 100%;
+      // width: 100%;
       margin: 0em 0em 1em 0;
 
     }
