@@ -14,9 +14,9 @@ export class KeywordResultComponent implements OnInit {
   gridColumnApi;
 
   getRowClass = params => {
-    if (params.node.rowIndex > 4) {
-      return 'premium';
-    };
+    // if (params.node.rowIndex > 4) {
+    //   return 'premium';
+    // };
   }
 
   rowSelection = 'multiple';
@@ -24,24 +24,26 @@ export class KeywordResultComponent implements OnInit {
     flex: 1,
     minWidth: 100,
     resizable: false,
+    sortable: true,
   };
   columnDefs = [
     {
       headerName: 'Google Search',
       field: 'google_search',
-      minWidth: 400,
+      minWidth: 250,
       headerCheckboxSelection: true,
       headerCheckboxSelectionFilteredOnly: true,
       checkboxSelection: true,
       cellClass: 'content-snippet',
-      cellStyle: { 'font-weight': '800' }
+      cellStyle: { 'font-weight': '800' },
+      filter: true
     },
-    { field: 'content_snippet', minWidth: 500, headerName: 'Content Snippet', },
-    { field: 'volume' },
-    { field: 'AIT' },
-    { field: 'value', },
+    { field: 'content_snippet', minWidth: 350, headerName: 'Content Snippet', filter: true },
+    { field: 'volume', filter: 'agNumberColumnFilter' },
+    { field: 'AIT', filter: 'agNumberColumnFilter' },
+    { field: 'value', filter: 'agNumberColumnFilter', },
     {
-      field: '', minWidth: 10, cellRenderer: function (params) {
+      field: '', maxWidth: 50, cellRenderer: function (params) {
         return '';
       }, cellClass: 'options'
     },
@@ -61,6 +63,8 @@ export class KeywordResultComponent implements OnInit {
     { google_search: 'How to learn music', content_snippet: 'Leverage agile frameworks to provide a robust synopsis for high level overviews. Aproaches to collaborative...', volume: 'Mondeo', AIT: 32000, value: '$32 USD' },
     { google_search: 'How to learn music', content_snippet: 'Leverage agile frameworks to provide a robust synopsis for high level overviews. Aproaches to collaborative...', volume: 'Boxter', AIT: 72000, value: '$72 USD' }
   ];
+
+
 
   onQuickFilterChanged() {
     this.gridApi.setQuickFilter((<HTMLInputElement>document.getElementById('quickFilter')).value);

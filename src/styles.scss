@@ -10,6 +10,14 @@
   width: 90%;
 }
 
+.ng-select .ng-select-container {
+  border: 0px solid rgb(204 204 204) !important;
+}
+
+.ng-select .ng-clear-wrapper {
+  display: none;
+}
+
 .bootstrap-tagsinput {
   border: 0px solid rgb(204, 204, 204) !important;
   background-color: #F6F6F6;

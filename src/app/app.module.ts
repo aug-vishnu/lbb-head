@@ -33,6 +33,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
+import { TextFieldModule } from '@angular/cdk/text-field';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -67,6 +69,7 @@ import { FormsModule } from '@angular/forms';
     MatCheckboxModule,
     MatIconModule,
     DragDropModule,
+    TextFieldModule,
     AgGridModule.withComponents([]),
     BrowserAnimationsModule
   ],

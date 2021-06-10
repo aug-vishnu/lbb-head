@@ -9,13 +9,13 @@
   </div>
   <div class="box-screen">
     <div class="table-wrapper">
-      <div class="top-bar fr">
+      <div class="top-bar-2 fr">
         <div class="count fr">
           <div class="all">All (15)</div>
           <div class="selected">Selected({{rowCount}})</div>
         </div>
         <div class="search fr">
-          <input type="text" (input)="onQuickFilterChanged()" placeholder="&#xF002;    Search Keywords"
+          <input type="text" (input)="onQuickFilterChanged()" id="quickFilter" placeholder="&#xF002;    Search Keywords"
             class="form-control" style="font-family: Arial, 'Font Awesome 5 Free'" />
           <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -34,7 +34,7 @@
           [rowData]="rowData" [columnDefs]="columnDefs" [getRowClass]="getRowClass"
           (selectionChanged)="onSelectionChanged($event)">
         </ag-grid-angular>
-        <div class="not-premium">
+        <!-- <div class="not-premium">
           <div class="content"> <span>350 Keywords. </span> Unlock with premium account</div>
           <button class="btn" type="submit">
             Unlock Premium<svg width="10" height="14" viewBox="0 0 10 14" fill="none"
@@ -44,7 +44,7 @@
                 fill="white" />
             </svg>
           </button>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

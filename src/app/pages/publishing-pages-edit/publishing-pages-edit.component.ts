@@ -1,5 +1,9 @@
 import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
-import { Component, OnInit } from '@angular/core';
+import { CdkTextareaAutosize } from '@angular/cdk/text-field';
+import { Component, NgZone, OnInit, ViewChild } from '@angular/core';
+declare var $: any;
+import { take } from 'rxjs/operators';
+
 export interface DragDropListItem {
   id: string;
   title: string;
@@ -13,26 +17,35 @@ export interface DragDropListItem {
 })
 export class PublishingPagesEditComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _ngZone: NgZone) { }
+
+  @ViewChild('autosize') autosize: CdkTextareaAutosize;
+
+  triggerResize() {
+    // Wait for changes to be applied, then trigger textarea resize.
+    this._ngZone.onStable.pipe(take(1))
+      .subscribe(() => this.autosize.resizeToFitContent(true));
+  }
 
   ngOnInit(): void {
+
   }
 
   unassignedTasks: DragDropListItem[] = [
     {
       id: '1',
       title: 'How to make food at home? 1',
-      description: 'This is description of tasks 1'
+      description: 'This is description of tasks Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem.t.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem ipsum dolor sit amet, consectetur.. 1 This is description of tasks Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem.t.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem ipsum dolor sit amet, consectetur.. 1'
     },
     {
       id: '2',
       title: 'How to make food at home? 2',
-      description: 'This is description of tasks 2'
+      description: 'This is description of tasks Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem.t.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem ipsum dolor sit amet, consectetur.. 2'
     },
     {
       id: '3',
       title: 'How to make food at home? 3',
-      description: 'This is description of tasks 3'
+      description: 'This is description of tasks Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem.t.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem ipsum dolor sit amet, consectetur.. 3'
     }
   ];
 
@@ -76,8 +89,9 @@ export class PublishingPagesEditComponent implements OnInit {
   }
   isEdit = false
   edit() {
+
+
     console.log("oh");
     this.isEdit = !this.isEdit
-
   }
 }

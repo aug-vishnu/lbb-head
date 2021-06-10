@@ -9,7 +9,7 @@
     margin-bottom: 0em;
 
     .content-one {
-      font-weight: 600;
+      font-weight: 500;
       color: #11142D;
       font-size: 1.2em;
 
@@ -26,7 +26,7 @@
     margin: 1em 0em;
 
     .top-line {
-      font-weight: 600;
+      font-weight: 500;
       color: #000;
       font-size: 0.8em;
     }
@@ -50,7 +50,7 @@
   margin: 0em 0;
   padding: .7em 3.8em;
   background-color: #1ABE97;
-  font-weight: 600;
+  font-weight: 400;
   box-shadow: 0px 4px 50px 0px #00000017;
 
 }
@@ -58,7 +58,7 @@
 
 
 .table-wrapper {
-  .top-bar {
+  .top-bar-2 {
     margin: 1em;
     justify-content: space-between;
     align-items: center;
@@ -69,12 +69,12 @@
       }
 
       .all {
-        font-weight: 600;
+        font-weight: 500;
         color: #000;
       }
 
       .selected {
-        font-weight: 600;
+        font-weight: 500;
         color: #92929D;
       }
     }
@@ -123,5 +123,5 @@
 
 
 .content-snippet {
-  font-weight: 600;
+  font-weight: 500;
 }
