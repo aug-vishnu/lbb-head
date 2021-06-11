@@ -56,7 +56,8 @@
             </svg>
           </span> Sign In with Facebook
         </button> -->
-            <button data-toggle="modal" class="btn google-button button" (click)="submit_form($event)" type="submit">
+            <button data-toggle="modal" class="btn google-button button" (click)="submit_form($event)"
+              [routerLink]="['/onboarding']" type="submit">
               <span>
                 <svg class="mx-3" width="23" height="24" viewBox="0 0 23 24" fill="none"
                   xmlns="http://www.w3.org/2000/svg">

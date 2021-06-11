@@ -30,20 +30,22 @@
       </a>
     </li> -->
     <li class="nav-item nav10" (click)="toValhalla(10)">
-      <a class="nav-link" data-toggle="collapse" [routerLink]="['/dashboard']" aria-expanded=" false"
-        aria-controls="ui-basic">
-        <i class="ti-bell menu-icon"></i>
-        <span class="menu-title">Dashboard</span>
+      <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded=" false" aria-controls="ui-basic">
+        <i class="ti-bell menu-icon" [routerLink]="['/dashboard']"></i>
+        <span class="menu-title" [routerLink]="['/dashboard']">Dashboard</span>
         <i class="menu-arrow"></i>
       </a>
       <div class="collapse" id="ui-basic">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item"> <a class="nav-link">Start New</a>
+          <li class="nav-item" [routerLink]="['/onboarding']"> <a class="nav-link">Start New</a>
           </li>
-          <li class="nav-item"> <a class="nav-link">View projects</a></li>
+          <li class="nav-item" [routerLink]="['/project-lists']" routerLinkActive="router-link-active"> <a
+              class="nav-link">View projects</a></li>
         </ul>
       </div>
     </li>
+
+
     <!-- Nav -->
     <!-- Nav Dropdown -->
     <!-- <li class="nav-item nav10" (click)="toValhalla(10)">

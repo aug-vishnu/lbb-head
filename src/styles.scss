@@ -625,7 +625,7 @@ header {
       align-items: center;
 
       .card-name {
-        font-weight: 500;
+        font-weight: 600;
         color: #11142D;
         font-size: 1em;
 
@@ -638,11 +638,14 @@ header {
 
       .card-options {
         color: #323236;
+        cursor: pointer;
         // text-decoration: underline;
         font-size: 0.7em;
-        padding: .5em 1em;
+        padding: .6em 1.3em;
         border: 1px solid #92929D;
-        border-radius: 6px;
+        border-radius: 10px;
+
+
       }
     }
 
@@ -669,21 +672,18 @@ header {
 
             .blog-name {
               font-size: .9em;
-              line-height: 1.5;
+              line-height: 2;
               text-decoration: underline;
             }
 
             span {
-              margin-left: 2em;
+              // margin-left: 2em;
+              font-size: .9em;
             }
           }
         }
       }
     }
-  }
-
-  .fontAwesome {
-    font-family: 'Helvetica', FontAwesome, sans-serif;
   }
 
   .second-section {
@@ -699,7 +699,7 @@ header {
         justify-content: space-between;
 
         .card-name {
-          font-weight: 500;
+          font-weight: 600;
           color: #11142D;
           font-size: 1.2em;
 
@@ -766,7 +766,7 @@ header {
         align-items: center;
 
         .card-name {
-          font-weight: 500;
+          font-weight: 600;
           color: #11142D;
           font-size: 1em;
 
@@ -779,12 +779,18 @@ header {
         }
 
         .card-options {
+          cursor: pointer;
           color: #323236;
           // text-decoration: underline;
           font-size: 0.7em;
-          padding: .5em 1em;
+          padding: .6em 1.3em;
           border: 1px solid #92929D;
-          border-radius: 6px;
+          border-radius: 10px;
+
+          span {
+            margin: 0;
+            font-size: .6em;
+          }
         }
       }
 
@@ -808,15 +814,17 @@ header {
               justify-content: space-between;
               margin-bottom: 4px;
               width: 100%;
+              // padding-top: 1em;
 
               .blog-name {
                 font-size: .9em;
-                line-height: 1.5;
+                line-height: 2;
                 text-decoration: underline;
               }
 
               span {
-                margin-left: 2em;
+                // margin-left: 2em;
+                font-size: .9em;
               }
             }
           }
@@ -978,11 +986,6 @@ header {
 html,
 body {
   height: 100%;
-}
-
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 
