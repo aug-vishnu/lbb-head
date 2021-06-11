@@ -29,7 +29,7 @@ const routes: Routes = [
 
   { path: 'onboarding', component: OnboardingComponent },
 
-  { path: 'keyword-lists', component: KeywordSelectionComponent },
+  { path: 'keyword-select', component: KeywordSelectionComponent },
 
   // Admin-Panel
   {
@@ -49,7 +49,7 @@ const routes: Routes = [
       { path: 'research', component: KeywordResultComponent },
       { path: 'project-lists', component: ProjectListComponent },
       { path: 'article-lists', component: ArticleListComponent },
-      { path: 'keyword-lists', component: ArticleListComponent },
+      { path: 'keyword-lists', component: KeywordResultComponent },
 
       { path: 'publishing', component: PublishingPagesComponent },
       { path: 'publishing-page-edit', component: PublishingPagesEditComponent },

@@ -28,7 +28,7 @@
         <div class="two-one card">
           <div class="card-meta fr">
             <div class="card-name">Recent keywords <span>93</span></div>
-            <div class="card-options">View all</div>
+            <div class="card-options" [routerLink]="['/keyword-lists']">View all</div>
           </div>
           <div class="card-content">
             <!-- <div class="no-content">No recent article keywords</div> -->
@@ -61,7 +61,7 @@
         <div class="two-two card">
           <div class="card-meta fr">
             <div class="card-name">Recent Articles</div>
-            <div class="card-options">View all</div>
+            <div class="card-options" [routerLink]="['/article-lists']">View all</div>
           </div>
           <div class="card-content">
             <!-- <div class="no-content">No recent article keywords</div> -->
@@ -97,7 +97,7 @@
       <div class="two-one card">
         <div class="card-meta fr">
           <div class="card-name">Articles Lists <span>93</span></div>
-          <div class="card-options">View all</div>
+          <div class="card-options" [routerLink]="['/article-lists']">View all</div>
         </div>
         <div class="card-content">
           <!-- <div class="no-content">No recent article keywords</div> -->
@@ -132,7 +132,7 @@
   <div class="second-section fr">
     <div class="second-one card">
       <div class="card-meta fr">
-        <div class="card-name">Articles Produced</div>
+        <div class="card-name">Articles Published</div>
         <div class="fr card-two">
           <div class="card-span">
             <div class="form-group">
@@ -172,7 +172,7 @@
       <div class="two-one card">
         <div class="card-meta fr">
           <div class="card-name">Keywords List <span>13</span></div>
-          <div class="card-options">View all</div>
+          <div class="card-options" [routerLink]="['/keyword-lists']">View all</div>
         </div>
         <div class="card-content">
           <!-- <div class="no-content">No recent article keywords</div> -->
@@ -245,7 +245,7 @@
       <!-- <div class="two-two card">
         <div class="card-meta fr">
           <div class="card-name">Longest form articles</div>
-          <div class="card-options">View all</div>
+          <div class="card-options" [routerLink]="['/keyword-lists']">View all</div>
         </div>
         <div class="card-content">
           <div class="no-content">No recent article keywords</div>

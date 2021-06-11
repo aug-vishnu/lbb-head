@@ -629,6 +629,11 @@ header {
         color: #11142D;
         font-size: 1em;
 
+        span {
+          color: #1ABE97;
+          font-size: 1em;
+          margin-left: 1em;
+        }
       }
 
       .card-options {
@@ -697,7 +702,15 @@ header {
           font-weight: 500;
           color: #11142D;
           font-size: 1.2em;
+
+          span {
+            color: #1ABE97;
+            font-size: 1em;
+            margin-left: 1em;
+          }
+
           // margin-bottom: 1.5em;
+
         }
 
         .card-two {
@@ -756,7 +769,13 @@ header {
           font-weight: 500;
           color: #11142D;
           font-size: 1em;
+
           // margin-bottom: 1em;
+          span {
+            color: #1ABE97;
+            font-size: 1em;
+            margin-left: 1em;
+          }
         }
 
         .card-options {
