@@ -1,8 +1,12 @@
 #content-part {
-  background-image: url(../../../assets/icons/auth-screen.png) !important;
+  background-image: url(../../../assets/icons/onboarding) !important;
 }
 
 .mat-checkbox-frame {
   border-color: #202121 !important;
   background-color: black;
+}
+
+label {
+  margin: 1px;
 }
