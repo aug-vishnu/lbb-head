@@ -36,6 +36,7 @@ import { FormsModule } from '@angular/forms';
 import { TextFieldModule } from '@angular/cdk/text-field';
 import { ArticleListComponent } from './pages/article-list/article-list.component';
 import { ProjectListComponent } from './pages/project-list/project-list.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -75,7 +76,8 @@ import { ProjectListComponent } from './pages/project-list/project-list.componen
     DragDropModule,
     TextFieldModule,
     AgGridModule.withComponents([]),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
