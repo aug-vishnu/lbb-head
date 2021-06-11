@@ -1009,3 +1009,80 @@ body {
 .sidebar-icon-only .sidebar .nav:not(.sub-menu) .nav-link.active {
   border-radius: 100% !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ag-theme-material .ag-chart-mini-thumbnail.ag-selected {
+  border-color: #1ABE97;
+}
+
+.ag-theme-material .ag-chart-settings-card-item.ag-selected {
+  background-color: #1ABE97;
+}
+
+.ag-theme-material .ag-checkbox-input-wrapper::after {
+  content: "\f108";
+  color: #1ABE97;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.ag-theme-material .ag-checkbox-input-wrapper.ag-checked::after {
+  content: "\f106";
+  color: #1ABE97;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.ag-theme-material .ag-toggle-button-input-wrapper.ag-checked {
+  background-color: #1ABE97;
+  border-color: #1ABE97;
+}
+
+
+.ag-theme-material .ag-toggle-button-input-wrapper.ag-checked::before {
+  left: calc(100% - 18px);
+  border-color: #1ABE97;
+}
+
+
+.ag-theme-material .ag-radio-button-input-wrapper.ag-checked::after {
+  content: "\f127";
+  color: #1ABE97;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.ag-theme-material input[class^='ag-'][type='range']:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 5px rgba(32, 33, 36, 0.122);
+  border-color: #1ABE97;
+}
+
+.ag-theme-material input[class^='ag-'][type='range']:focus::-ms-thumb {
+  box-shadow: 0 0 0 5px rgba(32, 33, 36, 0.122);
+  border-color: #1ABE97;
+}
+
+.ag-theme-material input[class^='ag-'][type='range']:focus::-moz-ag-range-thumb {
+  box-shadow: 0 0 0 5px rgba(32, 33, 36, 0.122);
+  border-color: #1ABE97;
+}
