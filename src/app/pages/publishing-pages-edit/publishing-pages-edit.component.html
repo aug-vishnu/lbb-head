@@ -1,0 +1,63 @@
+<div class="box">
+
+  <div class="screen">
+    <div class="top-line">
+      <div class="content-one">Content Snippets <span>(82)</span></div>
+      <div class="content-two" [routerLink]="['/publishing-pages']" routerLinkActive="router-link-active">
+        <button class="btn">
+          Next
+        </button>
+      </div>
+    </div>
+    <div class="box-screen">
+      <mat-accordion cdkDropList (cdkDropListDropped)="drop($event)">
+        <mat-expansion-panel cdkDrag *ngFor="let task of unassignedTasks; let index = index" #mep="matExpansionPanel"
+          (opened)="panelOpenState = true" (closed)="panelOpenState = true">
+          <mat-expansion-panel-header>
+            <input *ngIf="isEdit" name="text" type="text" class="form-control" value="{{ task.title }}" required
+              placeholder="Enter text ">
+
+            <mat-panel-title *ngIf="!isEdit">
+
+              {{ task.title }}
+            </mat-panel-title>
+            <mat-panel-description *ngIf="!mep.expanded">
+              <!-- <button mat-button color="primary" class="btn" (click)="edit()">Next</button> -->
+
+              <mat-icon class="mat-18 mr-2">edit</mat-icon>
+              <mat-checkbox color="primary" (click)="$event.stopPropagation()" (keydown)="$event.stopPropagation()">
+              </mat-checkbox>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <mat-panel-description>
+            <div class="buttons ">
+              <button *ngIf="!isEdit" class="btn mr-2" (click)=edit()>Edit content</button>
+              <button *ngIf="isEdit" class="btn" (click)=edit()>Save Edit</button>
+              <button *ngIf="isEdit" class="btn btn-light ml-2" (click)=edit()>Cancel</button>
+            </div>
+          </mat-panel-description>
+          <div class="text" *ngIf="isEdit">
+            <textarea matInput cdkTextareaAutosize [value]="task.description" #autosize="cdkTextareaAutosize"
+              cdkAutosizeMinRows="1" cdkAutosizeMaxRows="100"></textarea>
+          </div>
+          <p *ngIf="!isEdit">{{task.description}}</p>
+          <!-- <textarea class="form-control" id="w3review" name="w3review" wrap="soft" cols="50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem.t.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet leo sit amet magna efficitur consequatLorem ipsum dolor sit amet, consectetur..
+            </textarea> -->
+          <!-- <mat-action-row>
+            <div class="buttons fr">
+              <button class="btn mr-2" #edit (click)=edit()>
+                {{edit.value}}
+                Edit content
+              </button>
+              <button class="btn">
+                Save Edit
+              </button>
+              <button class="btn btn-light ml-2">
+                Cancel
+              </button>
+            </div>
+          </mat-action-row> -->
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+  </div>

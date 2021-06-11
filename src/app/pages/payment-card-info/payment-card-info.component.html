@@ -1,0 +1,147 @@
+<div class="screen">
+  <div class="top-line">
+    Payment
+  </div>
+  <div class="box-screen">
+    <!-- <div class="top-line">Billing Information</div> -->
+    <div class="box-content">
+      <div class="radio-cards fr">
+        <div class="radio-one active" (click)="toggleThing(1)">
+          <div class="checkmark" *ngIf="!isToggled">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M14.545 9.08707L10.5955 14.2747C10.4329 14.4883 10.1813 14.6145 9.91328 14.6163H9.90723C9.64179 14.6163 9.39106 14.4935 9.22678 14.2843L7.12404 11.5979C6.83007 11.2227 6.89578 10.6788 7.27189 10.3849C7.64713 10.09 8.19184 10.1557 8.48581 10.5327L9.89772 12.3363L13.1694 8.04002C13.4582 7.66046 14.0003 7.5861 14.3816 7.87575C14.7612 8.16539 14.8347 8.7075 14.545 9.08707ZM10.8317 2.51172C6.05642 2.51172 2.18555 6.38259 2.18555 11.1578C2.18555 15.9322 6.05642 19.804 10.8317 19.804C15.6069 19.804 19.4778 15.9322 19.4778 11.1578C19.4778 6.38259 15.6069 2.51172 10.8317 2.51172Z"
+                fill="#1ABE97" />
+              <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="18" height="18">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M14.545 9.08707L10.5955 14.2747C10.4329 14.4883 10.1813 14.6145 9.91328 14.6163H9.90723C9.64179 14.6163 9.39106 14.4935 9.22678 14.2843L7.12404 11.5979C6.83007 11.2227 6.89578 10.6788 7.27189 10.3849C7.64713 10.09 8.19184 10.1557 8.48581 10.5327L9.89772 12.3363L13.1694 8.04002C13.4582 7.66046 14.0003 7.5861 14.3816 7.87575C14.7612 8.16539 14.8347 8.7075 14.545 9.08707ZM10.8317 2.51172C6.05642 2.51172 2.18555 6.38259 2.18555 11.1578C2.18555 15.9322 6.05642 19.804 10.8317 19.804C15.6069 19.804 19.4778 15.9322 19.4778 11.1578C19.4778 6.38259 15.6069 2.51172 10.8317 2.51172Z"
+                  fill="white" />
+              </mask>
+              <g mask="url(#mask0)">
+                <rect x="0.457031" y="0.78125" width="20.7507" height="20.7507" fill="white" />
+              </g>
+            </svg>
+
+          </div>
+          <div class="icon credit">
+            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2.55273 12.6408C2.55273 9.23856 5.31082 6.48047 8.7131 6.48047H24.2761C27.6784 6.48047 30.4365 9.23856 30.4365 12.6408V20.4223C30.4365 23.8246 27.6784 26.5827 24.2761 26.5827H8.7131C5.31083 26.5827 2.55273 23.8246 2.55273 20.4223V12.6408ZM4.6109 11.6681H28.3783C27.9392 9.80921 26.2692 8.42585 24.2761 8.42585H8.7131C6.72001 8.42585 5.05001 9.80921 4.6109 11.6681ZM28.4911 13.6135H4.49811V20.4223C4.49811 22.7502 6.38523 24.6373 8.7131 24.6373H24.2761C26.604 24.6373 28.4911 22.7502 28.4911 20.4223V13.6135ZM18.1158 20.4223C18.1158 19.8851 18.5512 19.4497 19.0884 19.4497H24.2761C24.8133 19.4497 25.2488 19.8851 25.2488 20.4223C25.2488 20.9595 24.8133 21.395 24.2761 21.395H19.0884C18.5512 21.395 18.1158 20.9595 18.1158 20.4223Z" />
+            </svg>
+
+          </div>
+          <div class="name">Credit card</div>
+        </div>
+        <div class="radio-two" (click)="toggleThing(2)">
+          <div class="checkmark" *ngIf="isToggled">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M14.545 9.08707L10.5955 14.2747C10.4329 14.4883 10.1813 14.6145 9.91328 14.6163H9.90723C9.64179 14.6163 9.39106 14.4935 9.22678 14.2843L7.12404 11.5979C6.83007 11.2227 6.89578 10.6788 7.27189 10.3849C7.64713 10.09 8.19184 10.1557 8.48581 10.5327L9.89772 12.3363L13.1694 8.04002C13.4582 7.66046 14.0003 7.5861 14.3816 7.87575C14.7612 8.16539 14.8347 8.7075 14.545 9.08707ZM10.8317 2.51172C6.05642 2.51172 2.18555 6.38259 2.18555 11.1578C2.18555 15.9322 6.05642 19.804 10.8317 19.804C15.6069 19.804 19.4778 15.9322 19.4778 11.1578C19.4778 6.38259 15.6069 2.51172 10.8317 2.51172Z"
+                fill="#1ABE97" />
+              <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="18" height="18">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M14.545 9.08707L10.5955 14.2747C10.4329 14.4883 10.1813 14.6145 9.91328 14.6163H9.90723C9.64179 14.6163 9.39106 14.4935 9.22678 14.2843L7.12404 11.5979C6.83007 11.2227 6.89578 10.6788 7.27189 10.3849C7.64713 10.09 8.19184 10.1557 8.48581 10.5327L9.89772 12.3363L13.1694 8.04002C13.4582 7.66046 14.0003 7.5861 14.3816 7.87575C14.7612 8.16539 14.8347 8.7075 14.545 9.08707ZM10.8317 2.51172C6.05642 2.51172 2.18555 6.38259 2.18555 11.1578C2.18555 15.9322 6.05642 19.804 10.8317 19.804C15.6069 19.804 19.4778 15.9322 19.4778 11.1578C19.4778 6.38259 15.6069 2.51172 10.8317 2.51172Z"
+                  fill="white" />
+              </mask>
+              <g mask="url(#mask0)">
+                <rect x="0.457031" y="0.78125" width="20.7507" height="20.7507" fill="white" />
+              </g>
+            </svg>
+
+          </div>
+          <div class="icon paypal"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22.875 10C25 11.25 26 13.5 26 16C26 19.125 22.875 21.625 19.75 21.625H16.5L15.75 26.125C15.6916 26.4116 15.5345 26.6686 15.3061 26.8513C15.0777 27.0341 14.7924 27.1309 14.5 27.125H11.125C11.0313 27.1269 10.9383 27.1077 10.853 27.0688C10.7677 27.0299 10.6922 26.9723 10.6322 26.9002C10.5722 26.8282 10.5291 26.7436 10.5063 26.6527C10.4834 26.5618 10.4812 26.4669 10.5 26.375L10.75 24.625M13.5 17.25H16.625C19.75 17.25 22.875 14.125 22.875 11C22.875 7.25 20.5 4.75 16.625 4.75H9.75C9.125 4.75 8.5 5.375 8.5 6L6 23.5C6 24.125 6.625 24.75 7.25 24.75H10.75L12.25 18.5C12.375 17.75 12.75 17.25 13.5 17.25Z"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+          </div>
+          <div class="name">Paypal</div>
+        </div>
+      </div>
+      <!-- <div class="radio-cards">
+          <div class="radio-group row justify-content-start px-3 text-center a">
+            <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center radio selected ">
+              <div class="flex-row">
+                <div class="col">
+                  <div class="pic"> <img class="irc_mut img-fluid" src="https://i.imgur.com/6r0XCez.png" width="100"
+                      height="100">
+                  </div>
+                  <p>Credit Card</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio ">
+              <div class="flex-row">
+                <div class="col">
+                  <div class="pic"> <img class="irc_mut img-fluid" src="https://i.imgur.com/bGCqROr.png" width="100"
+                      height="100">
+                  </div>
+                  <p>Paypal</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      <form class="" *ngIf="!isToggled">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Cardholder Name </label>
+              <input name="email" type="email" class="form-control success" required placeholder="Chris Martin">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Card Number</label>
+              <input name="email" id="icon" type="email" class="form-control success" required
+                placeholder="2564 1421 0897 1244">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Expiration Date</label>
+              <input name="email" type="email" class="form-control success" required placeholder="02/2022">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>CVV</label>
+              <input name="password" placeholder='***' type="password" class="form-control" required
+                placeholder="Enter Password ">
+            </div>
+          </div>
+        </div>
+        <div class="botton-row">
+          <button [routerLink]="['/payment-card-info']" routerLinkActive="router-link-active" data-toggle="modal"
+            class="btn" type="submit">
+            Proceed
+          </button>
+        </div>
+      </form>
+      <form class="" *ngIf="isToggled">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Email</label>
+              <input name="email" type="email" class="form-control success" required placeholder="chrismartin@mail.com">
+            </div>
+          </div>
+        </div>
+        <div class="botton-row">
+          <button [routerLink]="['/payment-card-info']" routerLinkActive="router-link-active" data-toggle="modal"
+            class="btn" type="submit">
+            Proceed
+          </button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+</div>

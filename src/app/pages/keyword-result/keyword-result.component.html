@@ -1,0 +1,50 @@
+<div class="screen">
+  <div class="top-line">
+    <div class="content-one">Keywords <span>(82)</span></div>
+    <div class="content-two">
+      <button class="btn" type="submit">
+        Next
+      </button>
+    </div>
+  </div>
+  <div class="box-screen">
+    <div class="table-wrapper">
+      <div class="top-bar-2 fr">
+        <div class="count fr">
+          <div class="all">All (15)</div>
+          <div class="selected">Selected({{rowCount}})</div>
+        </div>
+        <div class="search fr">
+          <input type="text" (input)="onQuickFilterChanged()" id="quickFilter" placeholder="&#xF002;    Search Keywords"
+            class="form-control" style="font-family: Arial, 'Font Awesome 5 Free'" />
+          <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.0859375 0V6.469L6.18948 11.469V18.618L12.293 15.618V11.469L18.3966 6.469V0H0.0859375ZM16.3621 2V4H2.12045V2H16.3621ZM10.2585 10.531V14.382L8.22399 15.382V10.531L2.69215 6H15.7904L10.2585 10.531Z"
+              fill="#9A9AB0" />
+          </svg>
+
+        </div>
+      </div>
+      <!-- <ag-grid-angular style="width: 100%; height: 100%;" class="ag-theme-alpine" [columnDefs]="columnDefs"
+        [rowData]="rowData"></ag-grid-angular> -->
+
+      <div class="not-premium-cta">
+        <ag-grid-angular style="width: 100%; height: 100vh;" class="ag-theme-material" [defaultColDef]="defaultColDef"
+          [suppressRowClickSelection]="true" [rowSelection]="rowSelection" (gridReady)="onGridReady($event)"
+          [rowData]="rowData" [columnDefs]="columnDefs" [getRowClass]="getRowClass"
+          (selectionChanged)="onSelectionChanged($event)">
+        </ag-grid-angular>
+        <!-- <div class="not-premium">
+          <div class="content"> <span>350 Keywords. </span> Unlock with premium account</div>
+          <button class="btn" type="submit">
+            Unlock Premium<svg width="10" height="14" viewBox="0 0 10 14" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.75 4.66667H8.125V3.33333C8.125 1.49333 6.725 0 5 0C3.275 0 1.875 1.49333 1.875 3.33333V4.66667H1.25C0.5625 4.66667 0 5.26667 0 6V12.6667C0 13.4 0.5625 14 1.25 14H8.75C9.4375 14 10 13.4 10 12.6667V6C10 5.26667 9.4375 4.66667 8.75 4.66667ZM5 10.6667C4.3125 10.6667 3.75 10.0667 3.75 9.33333C3.75 8.6 4.3125 8 5 8C5.6875 8 6.25 8.6 6.25 9.33333C6.25 10.0667 5.6875 10.6667 5 10.6667ZM6.9375 4.66667H3.0625V3.33333C3.0625 2.19333 3.93125 1.26667 5 1.26667C6.06875 1.26667 6.9375 2.19333 6.9375 3.33333V4.66667Z"
+                fill="white" />
+            </svg>
+          </button>
+        </div> -->
+      </div>
+    </div>
+  </div>

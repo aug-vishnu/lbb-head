@@ -1,0 +1,166 @@
+<!-- Settings Part -->
+
+<!-- Settings Part -->
+
+<nav class="navbar fixed-top ">
+  <div class="text-center navbar-brand-wrapper d-flex ">
+    <a class="navbar-brand brand-logo"><img src="../../../assets/icons/nav.png" alt="logo" /></a>
+    <a class="navbar-brand brand-logo-mini"><img src="../../../assets/icons/nav-mini" alt="logo" /></a>
+  </div>
+  <div class="navbar-menu-wrapper">
+    <!-- <div class="logo nav-item" [routerLink]="['/dashboard']">
+      <img src="../../../assets/icons/nav.png" alt="">
+    </div> -->
+    <button (click)="toggleNav()" class="navbar-toggler navbar-toggler align-self-center" type="button"
+      data-toggle="minimize">
+      <span class="icon-menu"></span>
+    </button>
+
+
+
+    <!-- <ul class="menus fr justify-content-around">
+      <li class="nav-item fr  dropdown">
+        <a class="nav-link  fr align-items-center" data-toggle="dropdown" id="profileDropdown">
+          <div class="content">
+            <h5 style="color: white;" class="m-0" [routerLink]="['/dashboard']"> Dashboard</h5>
+          </div>
+          <svg class="ml-2" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L6 6L11 1" stroke="white" stroke-width="2" />
+          </svg>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+          <a class="dropdown-item" [routerLink]="['/onboarding']">
+            Start new
+          </a>
+          <a class="dropdown-item">
+            View Projects
+          </a>
+        </div>
+      </li>
+      <li class="nav-item fr  dropdown">
+        <a class="nav-link  fr align-items-center" data-toggle="dropdown" id="profileDropdown">
+          <div class="content">
+            <h5 style="color: white;" class="m-0"> Keywords</h5>
+          </div>
+          <svg class="ml-2" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L6 6L11 1" stroke="white" stroke-width="2" />
+          </svg>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+          <a class="dropdown-item" href="/keyword-lists">
+            Keyword List
+          </a>
+          <a class="dropdown-item" [routerLink]="['/research-results']">
+            Keyword Results
+          </a>
+
+        </div>
+      </li>
+
+      <li class="nav-item nav30" [routerLink]="['/publishing']">
+        <a class="nav-link">
+          <span class="menu-title">Articles</span>
+        </a>
+      </li>
+
+      <li class="nav-item nav50" [routerLink]="['/billing']">
+        <a class="nav-link">
+          <span class="menu-title">Billing</span>
+        </a>
+      </li>
+
+      <li class="nav-item nav70" [routerLink]="['/account']">
+        <a class="nav-link">
+          <span class="menu-title">Settings</span>
+        </a>
+      </li>
+    </ul> -->
+
+
+    <ul class="navbar-nav navbar-nav-right">
+      <li class="nav-item dropdown">
+        <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+          <i style="color: white;" class="icon-bell mx-0"></i>
+          <span class="count"></span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+          aria-labelledby="notificationDropdown">
+          <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+          <!-- <a class="dropdown-item preview-item">
+            <div class="preview-thumbnail">
+              <div class="preview-icon bg-success">
+                <i class="ti-info-alt mx-0"></i>
+              </div>
+            </div>
+            <div class="preview-item-content">
+              <h6 class="preview-subject font-weight-normal">Application Error</h6>
+              <p class="font-weight-light small-text mb-0 text-muted">
+                Just now
+              </p>
+            </div>
+          </a>
+          <a class="dropdown-item preview-item">
+            <div class="preview-thumbnail">
+              <div class="preview-icon bg-warning">
+                <i class="ti-settings mx-0"></i>
+              </div>
+            </div>
+            <div class="preview-item-content">
+              <h6 class="preview-subject font-weight-normal">Settings</h6>
+              <p class="font-weight-light small-text mb-0 text-muted">
+                Private message
+              </p>
+            </div>
+          </a>
+          <a class="dropdown-item preview-item">
+            <div class="preview-thumbnail">
+              <div class="preview-icon bg-info">
+                <i class="ti-user mx-0"></i>
+              </div>
+            </div>
+            <div class="preview-item-content">
+              <h6 class="preview-subject font-weight-normal">New user registration</h6>
+              <p class="font-weight-light small-text mb-0 text-muted">
+                2 days ago
+              </p>
+            </div>
+          </a> -->
+        </div>
+      </li>
+      <li class="nav-item nav-profile dropdown">
+
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="profileDropdown">
+          <div class="content">
+            <h5 style="color: white;" class="m-0"> Chris Martin</h5>
+            <!-- <div class="account-type">Free Account</div> -->
+          </div>
+          <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L6 6L11 1" stroke="white" stroke-width="2" />
+          </svg>
+
+        </a>
+        <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+          <a class="dropdown-item" [routerLink]="['/account']">
+            <i class="ti-settings text-primary"></i>
+            Settings
+          </a>
+          <a class="dropdown-item" (click)="logOut()">
+            <i class="ti-power-off text-primary"></i>
+            Logout
+          </a>
+        </div>
+      </li>
+      <!-- <li class="nav-item nav-settings d-none d-lg-flex">
+        <a class="nav-link" href="#">
+          <i class="icon-ellipsis"></i>
+        </a>
+      </li> -->
+    </ul>
+
+    <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+      data-toggle="offcanvas">
+      <span class="icon-menu"></span>
+    </button>
+  </div>
+</nav>
+<!-- partial -->
