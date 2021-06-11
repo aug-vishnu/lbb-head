@@ -43,9 +43,6 @@ const routes: Routes = [
 
       { path: 'pricing', component: PricingComponent },
 
-      { path: 'billing', component: PaymentPersonalInfoComponent },
-      { path: 'payment-method', component: PaymentCardInfoComponent },
-
       { path: 'research', component: KeywordResultComponent },
       { path: 'project-lists', component: ProjectListComponent },
       { path: 'article-lists', component: ArticleListComponent },
@@ -54,25 +51,35 @@ const routes: Routes = [
       { path: 'publishing', component: PublishingPagesComponent },
       { path: 'publishing-page-edit', component: PublishingPagesEditComponent },
 
+      { path: 'billing', component: PaymentPersonalInfoComponent },
+      { path: 'payment-method', component: PaymentCardInfoComponent },
+
     ]
   }
 ]
 // URL's for "LBB agency"
 
 // Login Page = https://lbb-head.vercel.app/login
-// Register Page = https://lbb-head.vercel.app/signup
+// Register Page = https://lbb-head.vercel.app/register
+
+// Dashboard Page = https://lbb-head.vercel.app/dashboard
 // Account Page = https://lbb-head.vercel.app/account
 
 // On - boarding Page = https://lbb-head.vercel.app/onboarding
-// Keyword List Page = https://lbb-head.vercel.app/keyword-lists
-
-// Dashboard Page = https://lbb-head.vercel.app/dashboard
 // Keywords Results Page = https://lbb-head.vercel.app/research
+// Keyword Select Page = https://lbb-head.vercel.app/keyword-select
+
+// Keyword List Page = https://lbb-head.vercel.app/keyword-lists
+// Project List Page = https://lbb-head.vercel.app/project-lists
+// Article List Page = https://lbb-head.vercel.app/article-lists
+
+
+
 // Article Spinner, Publishing, Quality Check Page = https://lbb-head.vercel.app/publishing
 // Publishing Edit Page = https://lbb-head.vercel.app/publishing-page-edit
 
-// Payment Personal Info Page = https://lbb-head.vercel.app/payment-personal-info
-// Payment Card Info Page = https://lbb-head.vercel.app/payment-card-info
+// Payment Personal Info Page = https://lbb-head.vercel.app/billing
+// Payment Card Info Page = https://lbb-head.vercel.app/payment-method
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

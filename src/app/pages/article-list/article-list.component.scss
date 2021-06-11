@@ -1,0 +1,127 @@
+.screen {
+  // margin-top: 20vh;
+  margin: 6vh 2em;
+
+  .top-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0em;
+
+    .content-one {
+      font-weight: 500;
+      color: #11142D;
+      font-size: 1.2em;
+
+      span {
+        color: rgba(17, 20, 45, 0.363)
+      }
+    }
+  }
+
+  .box-screen {
+    background-color: #fff;
+    border-radius: 0em;
+    padding: 1em;
+    margin: 1em 0em;
+
+    .top-line {
+      font-weight: 500;
+      color: #000;
+      font-size: 0.8em;
+    }
+  }
+
+  .botton-row {
+    display: flex;
+    justify-content: center;
+  }
+
+
+}
+
+.btn {
+  font-size: .8em;
+  // line-height: 1em;
+  color: #FFF;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0em 0;
+  padding: .7em 3.8em;
+  background-color: #1ABE97;
+  font-weight: 400;
+  box-shadow: 0px 4px 50px 0px #00000017;
+
+}
+
+
+
+.table-wrapper {
+  .top-bar-2 {
+    margin: 1em;
+    justify-content: space-between;
+    align-items: center;
+
+    .count {
+      div {
+        margin-right: 2em;
+      }
+
+      .all {
+        font-weight: 500;
+        color: #000;
+      }
+
+      .selected {
+        font-weight: 500;
+        color: #92929D;
+      }
+    }
+
+    .search {
+      align-items: center;
+
+      input {
+        margin-right: 2em;
+        padding: 1em 3em 1em 1em;
+        height: 30px;
+        background-color: #F2F9FF;
+        box-sizing: border-box;
+        border: 0.25px solid #D5DEEC !important;
+      }
+
+      input::placeholder::before {
+        content: "\f106";
+      }
+
+      input::-webkit-input-placeholder::after {
+        // color: white;
+        width: 1000px;
+        background-image: url(../../../assets/icons/Container.png);
+        // border: none;
+      }
+    }
+  }
+}
+
+
+.ag-theme-material .ag-checkbox-input-wrapper.ag-checked::after {
+  content: "\f106";
+  color: #1ABE97 !important;
+  // color: var(--ag-checkbox-checked-color, var(--ag-material-accent-color, #ff4081));
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.ag-header-cell-text {
+  color: #687993 !important;
+  font-weight: 600 !important;
+}
+
+
+.content-snippet {
+  font-weight: 500;
+}
