@@ -625,18 +625,23 @@ header {
 
     .card-meta {
       justify-content: space-between;
+      margin-bottom: 1em;
+      align-items: center;
 
       .card-name {
         font-weight: 500;
         color: #11142D;
         font-size: 1em;
-        margin-bottom: 1em;
+
       }
 
       .card-options {
-        color: #1ABE97;
-        text-decoration: underline;
+        color: #323236;
+        // text-decoration: underline;
         font-size: 0.7em;
+        padding: .5em 1em;
+        border: 1px solid #92929D;
+        border-radius: 6px;
       }
     }
 
@@ -746,18 +751,23 @@ header {
 
       .card-meta {
         justify-content: space-between;
+        margin-bottom: 1em;
+        align-items: center;
 
         .card-name {
           font-weight: 500;
           color: #11142D;
           font-size: 1em;
-          margin-bottom: 1em;
+          // margin-bottom: 1em;
         }
 
         .card-options {
-          color: #1ABE97;
-          text-decoration: underline;
+          color: #323236;
+          // text-decoration: underline;
           font-size: 0.7em;
+          padding: .5em 1em;
+          border: 1px solid #92929D;
+          border-radius: 6px;
         }
       }
 

@@ -1,3 +1,5 @@
+import { ArticleListComponent } from './pages/article-list/article-list.component';
+import { ProjectListComponent } from './pages/project-list/project-list.component';
 import { PublishingPagesEditComponent } from './pages/publishing-pages-edit/publishing-pages-edit.component';
 import { PublishingPagesComponent } from './pages/publishing-pages/publishing-pages.component';
 import { KeywordResultComponent } from './pages/keyword-result/keyword-result.component';
@@ -23,7 +25,7 @@ const routes: Routes = [
 
   // Auth
   { path: 'login', component: SigninComponent },
-  { path: 'signup', component: SignupComponent },
+  { path: 'register', component: SignupComponent },
 
   { path: 'onboarding', component: OnboardingComponent },
 
@@ -39,12 +41,15 @@ const routes: Routes = [
 
       { path: 'account', component: AccountSettingsComponent },
 
-      { path: 'billing', component: PricingComponent },
+      { path: 'pricing', component: PricingComponent },
 
-      { path: 'payment-personal-info', component: PaymentPersonalInfoComponent },
-      { path: 'payment-card-info', component: PaymentCardInfoComponent },
+      { path: 'billing', component: PaymentPersonalInfoComponent },
+      { path: 'payment-method', component: PaymentCardInfoComponent },
 
-      { path: 'research-results', component: KeywordResultComponent },
+      { path: 'research', component: KeywordResultComponent },
+      { path: 'project-lists', component: ProjectListComponent },
+      { path: 'article-lists', component: ArticleListComponent },
+      { path: 'keyword-lists', component: ArticleListComponent },
 
       { path: 'publishing', component: PublishingPagesComponent },
       { path: 'publishing-page-edit', component: PublishingPagesEditComponent },
@@ -62,7 +67,7 @@ const routes: Routes = [
 // Keyword List Page = https://lbb-head.vercel.app/keyword-lists
 
 // Dashboard Page = https://lbb-head.vercel.app/dashboard
-// Keywords Results Page = https://lbb-head.vercel.app/research-results
+// Keywords Results Page = https://lbb-head.vercel.app/research
 // Article Spinner, Publishing, Quality Check Page = https://lbb-head.vercel.app/publishing
 // Publishing Edit Page = https://lbb-head.vercel.app/publishing-page-edit
 
