@@ -37,6 +37,7 @@ import { TextFieldModule } from '@angular/cdk/text-field';
 import { ArticleListComponent } from './pages/article-list/article-list.component';
 import { ProjectListComponent } from './pages/project-list/project-list.component';
 import { ChartsModule } from 'ng2-charts';
+import { LockedResearchComponent } from './pages/locked-research/locked-research.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +62,7 @@ import { ChartsModule } from 'ng2-charts';
     PublishingPagesEditComponent,
     ArticleListComponent,
     ProjectListComponent,
+    LockedResearchComponent,
   ],
   imports: [
     BrowserModule,

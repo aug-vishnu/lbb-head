@@ -90,9 +90,10 @@ export class PublishingPagesEditComponent implements OnInit {
 
   }
   isEdit = false
+  panelId = 'cdk-accordion-child-0'
   edit(param) {
-    console.log(param);
-
+    this.panelId = param
+    console.log(this.panelId);
 
 
     console.log("oh");

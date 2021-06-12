@@ -1,3 +1,4 @@
+import { LockedResearchComponent } from './pages/locked-research/locked-research.component';
 import { ArticleListComponent } from './pages/article-list/article-list.component';
 import { ProjectListComponent } from './pages/project-list/project-list.component';
 import { PublishingPagesEditComponent } from './pages/publishing-pages-edit/publishing-pages-edit.component';
@@ -44,6 +45,8 @@ const routes: Routes = [
       { path: 'pricing', component: PricingComponent },
 
       { path: 'research', component: KeywordResultComponent },
+      { path: 'locked-research', component: LockedResearchComponent },
+
       { path: 'project-lists', component: ProjectListComponent },
       { path: 'article-lists', component: ArticleListComponent },
       { path: 'keyword-lists', component: KeywordResultComponent },

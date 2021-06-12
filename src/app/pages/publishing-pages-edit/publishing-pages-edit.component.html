@@ -14,15 +14,15 @@
         <mat-expansion-panel cdkDrag *ngFor="let task of unassignedTasks; let index = index" #mep="matExpansionPanel"
           (opened)="panelOpenState = true" (closed)="panelOpenState = true">
           <mat-expansion-panel-header>
-            <input *ngIf="isEdit" name="text" type="text" class="form-control" value="{{ task.title }}" required
+            <input *ngIf="isEdit " name="text" type="text" class="form-control" value="{{ task.title }}" required
               placeholder="Enter text ">
-            <mat-panel-title *ngIf="!isEdit">
-              {{mep._expanded}}
-
+            <mat-panel-title *ngIf="!isEdit ">
+              <!-- {{cdk-accordion-child-0}} -->
+              {{mep.id == panelId}}
               {{ task.title }}
             </mat-panel-title>
             <mat-panel-description *ngIf="!mep.expanded">
-              <!-- <button mat-button color="primary" class="btn" (click)="edit(mep)">Next</button> -->
+              <button mat-button color="primary" class="btn" (click)="edit(mep.id)">Next</button>
 
               <mat-icon class="mat-18 mr-2">edit</mat-icon>
               {{check._checked}}
@@ -33,9 +33,9 @@
           </mat-expansion-panel-header>
           <mat-panel-description>
             <div class="buttons ">
-              <button *ngIf="!isEdit" class="btn mr-2" (click)=edit()>Edit content</button>
-              <button *ngIf="isEdit" class="btn" (click)=edit()>Save Edit</button>
-              <button *ngIf="isEdit" class="btn btn-light ml-2" (click)=edit()>Cancel</button>
+              <button *ngIf="!isEdit" class="btn mr-2" (click)=edit(mep.id)>Edit content</button>
+              <button *ngIf="isEdit" class="btn" (click)=edit(mep.id)>Save Edit</button>
+              <button *ngIf="isEdit" class="btn btn-light ml-2" (click)=edit(mep.id)>Cancel</button>
             </div>
           </mat-panel-description>
           <div class="text" *ngIf="isEdit">
