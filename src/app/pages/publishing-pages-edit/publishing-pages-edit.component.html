@@ -13,19 +13,18 @@
       <mat-accordion cdkDropList (cdkDropListDropped)="drop($event)">
         <mat-expansion-panel cdkDrag *ngFor="let task of unassignedTasks; let index = index" #mep="matExpansionPanel"
           (opened)="panelOpenState = true" (closed)="panelOpenState = true">
-          <mat-expansion-panel-header>
-            <input *ngIf="isEdit " name="text" type="text" class="form-control" value="{{ task.title }}" required
+          <mat-expansion-panel-header [ngClass]="{'add_class' : true}">
+            <input *ngIf="isEdit" name="text" type="text" class="form-control" value="{{ task.title }}" required
               placeholder="Enter text ">
-            <mat-panel-title *ngIf="!isEdit ">
+            <mat-panel-title *ngIf="!isEdit">
               <!-- {{cdk-accordion-child-0}} -->
-              {{mep.id == panelId}}
+              <!-- {{mep.id == panelId}} -->
               {{ task.title }}
             </mat-panel-title>
             <mat-panel-description *ngIf="!mep.expanded">
-              <button mat-button color="primary" class="btn" (click)="edit(mep.id)">Next</button>
-
+              <!-- <button mat-button color="primary" class="btn" (click)="edit(mep.id)">Next</button> -->
+              <!-- {{check._checked}} -->
               <mat-icon class="mat-18 mr-2">edit</mat-icon>
-              {{check._checked}}
               <mat-checkbox color="primary" (click)="$event.stopPropagation()" #check
                 (keydown)="$event.stopPropagation()">
               </mat-checkbox>

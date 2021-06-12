@@ -72,7 +72,7 @@
 .bootstrap-tagsinput .tag [data-role="remove"]:after {
   content: "X";
   font-size: 1em;
-  padding: .3em;
+  padding: 0.1em 0.25em 0.05em 0.2em;
 }
 
 
@@ -95,6 +95,10 @@
 .mat-checkbox-layout {
   // vertical-align: unset !important;
   margin-bottom: 0 !important;
+}
+
+.mat-expansion-panel:has(.mat-checkbox-background:checked) {
+  background-color: #1ABE97 !important;
 }
 
 .mat-checkbox-background:checked {
