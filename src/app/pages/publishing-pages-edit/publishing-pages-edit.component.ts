@@ -67,17 +67,19 @@ export class PublishingPagesEditComponent implements OnInit {
     }
   ];
 
-  drop(event: CdkDragDrop<DragDropListItem[]>) {
-    if (event.previousContainer === event.container) {
-      moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
-    } else {
-      transferArrayItem(event.previousContainer.data,
-        event.container.data,
-        event.previousIndex,
-        event.currentIndex);
-    }
+  // drop(event: CdkDragDrop<DragDropListItem[]>) {
+  //   if (event.previousContainer === event.container) {
+  //     moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
+  //   } else {
+  //     transferArrayItem(event.previousContainer.data,
+  //       event.container.data,
+  //       event.previousIndex,
+  //       event.currentIndex);
+  //   }
+  // }
+  drop(event: CdkDragDrop<string[]>) {
+    moveItemInArray(this.unassignedTasks, event.previousIndex, event.currentIndex);
   }
-
   isExpanded = true
   activeIndex = 0
   expanded(index) {
@@ -88,7 +90,9 @@ export class PublishingPagesEditComponent implements OnInit {
 
   }
   isEdit = false
-  edit() {
+  edit(param) {
+    console.log(param);
+
 
 
     console.log("oh");

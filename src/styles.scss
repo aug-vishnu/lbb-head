@@ -231,7 +231,7 @@ body {
 }
 
 .form-group {
-  margin: 0.5em 0em;
+  margin: 1em 0em;
 
   label {
     font-weight: 200;
@@ -442,18 +442,18 @@ header {
     }
 
     .login-button {
-      margin: 1.5em 0;
+      margin: 1em 0;
     }
 
     .facebook-button {
-      margin: 0.5em 0;
+      margin: 1em 0;
       color: #FFF;
       border: 2px solid #1877F2;
       background-color: #1877F2;
     }
 
     .google-button {
-      margin: 0.5em 0;
+      margin: 1em 0;
       color: #0000008A;
       border: 2px solid #FFF;
       background-color: #FFF;
@@ -673,6 +673,7 @@ header {
             .blog-name {
               font-size: .9em;
               line-height: 2;
+              cursor: pointer;
               text-decoration: underline;
             }
 
@@ -818,6 +819,7 @@ header {
 
               .blog-name {
                 font-size: .9em;
+                cursor: pointer;
                 line-height: 2;
                 text-decoration: underline;
               }

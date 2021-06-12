@@ -16,16 +16,18 @@
           <mat-expansion-panel-header>
             <input *ngIf="isEdit" name="text" type="text" class="form-control" value="{{ task.title }}" required
               placeholder="Enter text ">
-
             <mat-panel-title *ngIf="!isEdit">
+              {{mep._expanded}}
 
               {{ task.title }}
             </mat-panel-title>
             <mat-panel-description *ngIf="!mep.expanded">
-              <!-- <button mat-button color="primary" class="btn" (click)="edit()">Next</button> -->
+              <!-- <button mat-button color="primary" class="btn" (click)="edit(mep)">Next</button> -->
 
               <mat-icon class="mat-18 mr-2">edit</mat-icon>
-              <mat-checkbox color="primary" (click)="$event.stopPropagation()" (keydown)="$event.stopPropagation()">
+              {{check._checked}}
+              <mat-checkbox color="primary" (click)="$event.stopPropagation()" #check
+                (keydown)="$event.stopPropagation()">
               </mat-checkbox>
             </mat-panel-description>
           </mat-expansion-panel-header>

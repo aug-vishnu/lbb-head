@@ -12,11 +12,18 @@ import { Color, Label } from 'ng2-charts';
 })
 export class DashboardHomeComponent implements OnInit {
   public lineChartData: ChartDataSets[] = [
-    { data: [45, 39, 40, 41, 56, 55, 70], label: 'Articles' },
+    { data: [30, 45, 41, 56, 55, 70], label: 'Articles' },
   ];
-  public lineChartLabels: Label[] = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+  public lineChartLabels: Label[] = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   public lineChartOptions: (ChartOptions & { annotation?: any }) = {
     responsive: true,
+    scales: {
+      xAxes: [{
+        gridLines: {
+          display: false,
+        }
+      }]
+    },
   };
   public lineChartColors: Color[] = [
     {
