@@ -538,6 +538,7 @@ header {
 
 // Dashboard Component
 .dashboard {
+
   .welcome {
     font-size: 1.2em;
     font-weight: 500;
@@ -627,11 +628,18 @@ header {
       justify-content: space-between;
       margin-bottom: 1em;
       align-items: center;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
 
       .card-name {
         font-weight: 600;
         color: #11142D;
         font-size: 1em;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+
 
         span {
           color: #1ABE97;
@@ -648,6 +656,9 @@ header {
         padding: .6em 1.3em;
         border: 1px solid #92929D;
         border-radius: 10px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
 
 
       }
@@ -679,6 +690,10 @@ header {
               line-height: 2;
               cursor: pointer;
               text-decoration: underline;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+
             }
 
             span {
@@ -821,11 +836,18 @@ header {
               width: 100%;
               // padding-top: 1em;
 
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+
               .blog-name {
                 font-size: .9em;
                 cursor: pointer;
                 line-height: 2;
                 text-decoration: underline;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
               }
 
               span {

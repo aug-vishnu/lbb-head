@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 declare var $: any;
 
 @Component({
@@ -15,8 +15,8 @@ export class SideBarComponent implements OnInit {
     this.get_nav()
     // this.toValhalla(this.activeNav)
   }
-  selectedProject: number = 1;
 
+  selectedProject: number = 1;
   projects = [
     { id: 1, name: 'Project Name' },
     { id: 2, name: 'Project Name' },
